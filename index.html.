@@ -27,12 +27,17 @@
 <body>
   <h1>Hola, soy Nuri 👋</h1>
   <p>Estoy aprendiendo análisis de datos y este es mi portfolio.</p>
+<h1>🗂 Mis proyectos destacados</h1>
 
-  <h2>Proyectos destacados</h2>
-  <ul>
-    <li><a href="https://link-al-proyecto.com" target="_blank">🔍 Análisis de asesinos en serie</a></li>
-    <!-- Aquí puedes añadir más proyectos -->
-  </ul>
+<div class="proyecto">
+  <h2>🧠 Proyecto: Analisis de la masculinidad</h2>
+  <p>Proyecto grupal con Andrea Gauger realizado en el bootcamp de Adalab. Analizamos la nueva masculinidad con Python y Tableau.</p>
+  <p>Yo trabajé en el análisis exploratorio de datos, la limpieza con Python y la visualización final con Tableau .</p>
+  <a href="https://github.com/NuriaSalasVazquez/da-project-promo-49-modulo-4-team-9" target="_blank">🔗 Ver repositorio en GitHub</a><br />
+  <a href="https://public.tableau.com/app/profile/nuria.salas.vazquez/viz/Analisisdelamasculinidad_17147362674830/INICIO" target="_blank">📊 Ver dashboard en Tableau</a>
+</div>
+
+  
 
   <p>¡Gracias por visitar mi página! 😊</p>
 </body>
