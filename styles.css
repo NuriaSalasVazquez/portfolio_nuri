@@ -1,137 +1,94 @@
+/* Colores suaves y fuentes redondeadas */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio de Nuria</title>
-    <style>
-        /* Colores suaves y fuentes redondeadas */
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f8f8f8;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
+header {
+    background-color: #c5b3e6; /* Violeta clarito */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #8a72b8; /* Violeta más oscuro */
+}
 
-        header {
-            background-color: #c5b3e6; /* Violeta clarito */
-            color: white;
-            padding: 20px;
-            text-align: center;
-            border-bottom: 5px solid #8a72b8; /* Violeta más oscuro */
-        }
+h1 {
+    font-size: 2.5em;
+    font-weight: 400;
+    margin: 0;
+}
 
-        h1 {
-            font-size: 2.5em;
-            font-weight: 400;
-            margin: 0;
-        }
+h2 {
+    font-size: 2em;
+    font-weight: 300;
+    margin-top: 30px;
+    color: #6b8e23; /* Verde oliva clarito */
+}
 
-        h2 {
-            font-size: 2em;
-            font-weight: 300;
-            margin-top: 30px;
-            color: #6b8e23; /* Verde oliva clarito */
-        }
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 20px 0;
+}
 
-        p {
-            font-size: 1.1em;
-            line-height: 1.6;
-            margin: 20px 0;
-        }
+ul {
+    list-style-type: none;
+    padding: 0;
+}
 
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
+ul li {
+    margin: 15px 0;
+}
 
-        ul li {
-            margin: 15px 0;
-        }
+a {
+    text-decoration: none;
+    color: #6b8e23; /* Verde oliva clarito */
+    font-weight: bold;
+}
 
-        a {
-            text-decoration: none;
-            color: #6b8e23; /* Verde oliva clarito */
-            font-weight: bold;
-        }
+a:hover {
+    color: #8a72b8; /* Violeta clarito */
+}
 
-        a:hover {
-            color: #8a72b8; /* Violeta clarito */
-        }
+.project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
 
-        .project {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #fff;
-            padding: 20px;
-            margin: 20px 0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
+.project img {
+    max-width: 100px;
+    border-radius: 10px;
+}
 
-        .project img {
-            max-width: 100px;
-            border-radius: 10px;
-        }
+.project-details {
+    flex: 1;
+    margin-left: 20px;
+}
 
-        .project-details {
-            flex: 1;
-            margin-left: 20px;
-        }
+.project-details h3 {
+    font-size: 1.5em;
+    color: #333;
+}
 
-        .project-details h3 {
-            font-size: 1.5em;
-            color: #333;
-        }
+footer {
+    background-color: #6b8e23; /* Verde oliva clarito */
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
 
-        footer {
-            background-color: #6b8e23; /* Verde oliva clarito */
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
+/* Imagen de gráfico o computadora */
+.data-image {
+    max-width: 150px;
+    border-radius: 10px;
+}
 
-        /* Icono para análisis de datos */
-        .data-icon {
-            font-size: 40px;
-            color: #8a72b8;
-            margin-right: 15px;
-        }
-
-    </style>
-</head>
-<body>
-
-<header>
-    <h1>Portfolio de Nuria Salas</h1>
-    <p>Bienvenida a mi portfolio, donde encontrarás mis proyectos más destacados en el análisis de datos.</p>
-</header>
-
-<main>
-    <section>
-        <h2>Proyectos destacados</h2>
-        <ul>
-            <li>
-                <div class="project">
-                    <div class="project-details">
-                        <h3><a href="https://link-al-proyecto.com" target="_blank">🔍 Análisis de la Masculinidad</a></h3>
-                        <p>En este proyecto analicé cómo la construcción social de la masculinidad afecta a diferentes aspectos de la vida en la sociedad actual.</p>
-                    </div>
-                    <div>
-                        <i class="data-icon">📊</i> <!-- Ícono de análisis de datos -->
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </section>
-</main>
-
-<footer>
-    <p>&copy; 2025 Nuria Salas | Todos los derechos reservados</p>
-</footer>
-
-</body>
-</html>
