@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -8,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio de Nuria Salas</title>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
             font-family: 'Quicksand', sans-serif;
-            background: linear-gradient(to right, #e8f5e9, #f3e5f5); /* verde oliva claro a violeta claro */
+            background: linear-gradient(to right, #e8f5e9, #f3e5f5);
             color: #333;
         }
         header {
@@ -48,10 +47,16 @@
             width: 250px;
             height: 250px;
             object-fit: cover;
-            border-radius: 50%;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border: 4px solid #4a148c;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
-        h1, h2, h3 {
+        h1 {
+            font-family: 'Cookie', cursive;
+            font-size: 3rem;
+            color: #4a148c;
+        }
+        h2, h3 {
             color: #4a148c;
         }
         .boton {
@@ -102,16 +107,25 @@
     </section>
 
     <section id="proyectos">
-        <div class="container">
-            <h2>🌟 Proyectos destacados</h2>
-            <div class="proyecto">
-                <h3>💥 Análisis sobre la masculinidad en el siglo XXI</h3>
-                <p>Este proyecto explora el perfil social y psicológico de los hombres en el siglo XXI, abordando temas de masculinidad y cómo estos se reflejan en diferentes contextos. El análisis se realizó junto a mi compañera Andrea Gauger, utilizando Tableau y Python para crear visualizaciones interactivas.</p>
-                <a href="https://github.com/NuriaSalasVazquez/da-project-promo-49-modulo-4-team-9" target="_blank" class="boton">Ver repositorio en GitHub</a>
-                <p><a href="https://public.tableau.com/views/SerunHombreenelSXXIUnaTragediaen6Actos_/Introduction?:language=es-ES&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" class="boton">Ver proyecto en Tableau</a></p>
-            </div>
-        </div>
-    </section>
+     <div class="container">
+         <h2>🌟 Proyectos destacados</h2>
+         
+         <!-- Proyecto 1: Análisis sobre la masculinidad en el siglo XXI -->
+         <div class="proyecto">
+             <div class="portada-proyecto">
+                 <img src="https://link-a-tu-imagen-de-portada.com" alt="Portada del proyecto Masculinidad en el Siglo XXI" class="imagen-portada">
+                 <div class="contenido-portada">
+                     <h3>💥 Análisis sobre la masculinidad en el siglo XXI</h3>
+                     <p>Este proyecto explora el perfil social y psicológico de los hombres en el siglo XXI, abordando temas de masculinidad y cómo estos se reflejan en diferentes contextos.</p>
+                 </div>
+             </div>
+             <a href="https://github.com/NuriaSalasVazquez/da-project-promo-49-modulo-4-team-9" target="_blank" class="boton">Ver repositorio en GitHub</a>
+             <p><a href="https://public.tableau.com/views/SerunHombreenelSXXIUnaTragediaen6Actos_/Introduction?:language=es-ES&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" class="boton">Ver proyecto en Tableau</a></p>
+         </div>
+         <!-- Puedes añadir más proyectos aquí con el mismo formato -->
+     </div>
+ </section>
+
 
     <section id="contacto">
         <div class="container">
