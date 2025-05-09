@@ -8,12 +8,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio de Nuria Salas</title>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@600&family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+            background: linear-gradient(to right, #e8f5e9, #f3e5f5); /* verde oliva claro a violeta claro */
+            color: #333;
+        }
+        header {
+            background-color: #c5e1a5;
+            padding: 1rem;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: #4a148c;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .sobre-mi-grid {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 2rem;
+        }
+        .imagen-sobre-mi img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            color: #4a148c;
+        }
+        .boton {
+            display: inline-block;
+            background-color: #a5d6a7;
+            color: #4a148c;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 0.5rem;
+        }
+        .email-contacto {
+            margin-top: 1rem;
+            font-size: 1.1rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #e1bee7;
+            color: #4a148c;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Barra de navegación -->
     <header>
         <nav>
             <ul>
@@ -24,7 +89,6 @@
         </nav>
     </header>
 
-    <!-- Sección "Sobre mí" -->
     <section id="sobre-mi">
         <div class="container sobre-mi-grid">
             <div class="sobre-mi-contenido">
@@ -37,7 +101,6 @@
         </div>
     </section>
 
-    <!-- Sección de Proyectos -->
     <section id="proyectos">
         <div class="container">
             <h2>🌟 Proyectos destacados</h2>
@@ -50,7 +113,6 @@
         </div>
     </section>
 
-    <!-- Sección de contacto -->
     <section id="contacto">
         <div class="container">
             <h2>📬 Contacto</h2>
@@ -60,7 +122,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <p>&copy; 2025 Nuria Salas. Todos los derechos reservados.</p>
     </footer>
