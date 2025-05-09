@@ -1,149 +1,137 @@
 
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Nuria</title>
+    <style>
+        /* Colores suaves y fuentes redondeadas */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
 
-/* Fuente principal */
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f8f9fa; /* Color muy suave de fondo */
-    color: #333;
-    line-height: 1.6;
-}
+        header {
+            background-color: #c5b3e6; /* Violeta clarito */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #8a72b8; /* Violeta más oscuro */
+        }
 
-/* Barra de navegación */
-header {
-    background-color: #8A2BE2; /* Violeta */
-    padding: 20px 0;
-}
+        h1 {
+            font-size: 2.5em;
+            font-weight: 400;
+            margin: 0;
+        }
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
+        h2 {
+            font-size: 2em;
+            font-weight: 300;
+            margin-top: 30px;
+            color: #6b8e23; /* Verde oliva clarito */
+        }
 
-nav ul li {
-    margin: 0 20px;
-}
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 18px;
-}
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
 
-nav ul li a:hover {
-    color: #FF69B4; /* Rosa brillante */
-}
+        ul li {
+            margin: 15px 0;
+        }
 
-/* Sección "Sobre mí" */
-#sobre-mi {
-    background-color: #98FB98; /* Verde claro */
-    padding: 40px 20px;
-    text-align: center;
-    border-radius: 15px;
-    margin-bottom: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        a {
+            text-decoration: none;
+            color: #6b8e23; /* Verde oliva clarito */
+            font-weight: bold;
+        }
 
-.sobre-mi-contenido h1 {
-    font-size: 36px;
-    color: #6A5ACD; /* Púrpura */
-}
+        a:hover {
+            color: #8a72b8; /* Violeta clarito */
+        }
 
-.sobre-mi-contenido p {
-    font-size: 18px;
-    color: #555;
-    margin-top: 15px;
-}
+        .project {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
 
-.imagen-sobre-mi img {
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border: 5px solid #8A2BE2; /* Violeta */
-}
+        .project img {
+            max-width: 100px;
+            border-radius: 10px;
+        }
 
-/* Proyectos */
-#proyectos h2 {
-    font-size: 30px;
-    margin-bottom: 40px;
-    text-align: center;
-    color: #8A2BE2; /* Violeta */
-}
+        .project-details {
+            flex: 1;
+            margin-left: 20px;
+        }
 
-.proyecto {
-    background-color: #fff;
-    padding: 30px;
-    margin-bottom: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-}
+        .project-details h3 {
+            font-size: 1.5em;
+            color: #333;
+        }
 
-.proyecto:hover {
-    transform: translateY(-5px);
-}
+        footer {
+            background-color: #6b8e23; /* Verde oliva clarito */
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
 
-.proyecto h3 {
-    font-size: 28px;
-    color: #8A2BE2;
-    margin-bottom: 15px;
-}
+        /* Icono para análisis de datos */
+        .data-icon {
+            font-size: 40px;
+            color: #8a72b8;
+            margin-right: 15px;
+        }
 
-.proyecto p {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 20px;
-}
+    </style>
+</head>
+<body>
 
-.boton {
-    display: inline-block;
-    background-color: #FF69B4; /* Rosa */
-    color: #fff;
-    padding: 12px 25px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s, transform 0.3s;
-    font-weight: 600;
-}
+<header>
+    <h1>Portfolio de Nuria Salas</h1>
+    <p>Bienvenida a mi portfolio, donde encontrarás mis proyectos más destacados en el análisis de datos.</p>
+</header>
 
-.boton:hover {
-    background-color: #FF1493; /* Rosa fuerte */
-    transform: translateY(-3px);
-}
+<main>
+    <section>
+        <h2>Proyectos destacados</h2>
+        <ul>
+            <li>
+                <div class="project">
+                    <div class="project-details">
+                        <h3><a href="https://link-al-proyecto.com" target="_blank">🔍 Análisis de la Masculinidad</a></h3>
+                        <p>En este proyecto analicé cómo la construcción social de la masculinidad afecta a diferentes aspectos de la vida en la sociedad actual.</p>
+                    </div>
+                    <div>
+                        <i class="data-icon">📊</i> <!-- Ícono de análisis de datos -->
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+</main>
 
-/* Sección de Contacto */
-#contacto h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #8A2BE2;
-}
+<footer>
+    <p>&copy; 2025 Nuria Salas | Todos los derechos reservados</p>
+</footer>
 
-#contacto p {
-    text-align: center;
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 20px;
-}
-
-/* Footer */
-footer {
-    background-color: #8A2BE2;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-footer p {
-    font-size: 16px;
-}
+</body>
+</html>
