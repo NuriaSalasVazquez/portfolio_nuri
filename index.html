@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -7,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio de Nuria Salas</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
-            font-family: 'Quicksand', sans-serif;
+            font-family: 'Comic Neue', cursive;
             background: linear-gradient(to right, #e8f5e9, #f3e5f5);
             color: #333;
         }
         header {
-            background-color: #c5e1a5;
+            background-color: #a5d6a7; /* Verde oliva */
             padding: 1rem;
         }
         nav ul {
@@ -29,7 +28,7 @@
         }
         nav a {
             text-decoration: none;
-            color: #4a148c;
+            color: #556b2f; /* Verde oliva más oscuro */
             font-weight: bold;
         }
         .container {
@@ -47,21 +46,21 @@
             width: 250px;
             height: 250px;
             object-fit: cover;
-            border: 4px solid #4a148c;
+            border: 4px solid #556b2f; /* Verde oliva más oscuro */
             border-radius: 16px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         }
         h1 {
-            font-family: 'Cookie', cursive;
+            font-family: 'Comic Neue', cursive;
             font-size: 3rem;
-            color: #4a148c;
+            color: #556b2f; /* Verde oliva más oscuro */
         }
         h2, h3 {
-            color: #4a148c;
+            color: #556b2f;
         }
         .boton {
             display: inline-block;
-            background-color: #a5d6a7;
+            background-color: #a5d6a7; /* Verde oliva */
             color: #4a148c;
             padding: 0.5rem 1rem;
             border-radius: 25px;
@@ -79,6 +78,31 @@
             background-color: #e1bee7;
             color: #4a148c;
             font-size: 0.9rem;
+        }
+        .proyecto {
+            margin-bottom: 3rem;
+        }
+        .portada-proyecto {
+            position: relative;
+            display: inline-block;
+        }
+        .portada-proyecto img {
+            width: 100%;
+            height: auto;
+            border-radius: 16px;
+            cursor: pointer;
+        }
+        .contenido-portada {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+        .portada-proyecto a {
+            display: block;
         }
     </style>
 </head>
@@ -113,7 +137,9 @@
          <!-- Proyecto 1: Análisis sobre la masculinidad en el siglo XXI -->
          <div class="proyecto">
              <div class="portada-proyecto">
-                 <img src="https://www.uv.es/recursos/fatwirepub/ccurl/713/721/homes_igualtat.jpg">
+                 <a href="https://github.com/NuriaSalasVazquez/da-project-promo-49-modulo-4-team-9" target="_blank">
+                     <img src="https://www.uv.es/recursos/fatwirepub/ccurl/713/721/homes_igualtat.jpg" alt="Portada Proyecto Masculinidad">
+                 </a>
                  <div class="contenido-portada">
                      <h3>💥 Análisis sobre la masculinidad en el siglo XXI</h3>
                      <p>Este proyecto explora el perfil social y psicológico de los hombres en el siglo XXI, abordando temas de masculinidad y cómo estos se reflejan en diferentes contextos.</p>
@@ -122,10 +148,8 @@
              <a href="https://github.com/NuriaSalasVazquez/da-project-promo-49-modulo-4-team-9" target="_blank" class="boton">Ver repositorio en GitHub</a>
              <p><a href="https://public.tableau.com/views/SerunHombreenelSXXIUnaTragediaen6Actos_/Introduction?:language=es-ES&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" class="boton">Ver proyecto en Tableau</a></p>
          </div>
-         <!-- Puedes añadir más proyectos aquí con el mismo formato -->
      </div>
  </section>
-
 
     <section id="contacto">
         <div class="container">
