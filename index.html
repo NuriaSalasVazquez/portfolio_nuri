@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio de Nuria Salas</title>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
     <style>
@@ -12,12 +11,14 @@
             margin: 0;
             font-family: 'Comic Neue', cursive;
             background: linear-gradient(to right, #e8f5e9, #f3e5f5);
-            color: #333;
+            color: #000;
         }
+
         header {
-            background-color: #a5d6a7; /* Verde oliva */
+            background-color: #a5d6a7;
             padding: 1rem;
         }
+
         nav ul {
             list-style: none;
             display: flex;
@@ -26,52 +27,60 @@
             margin: 0;
             padding: 0;
         }
+
         nav a {
             text-decoration: none;
-            color: #556b2f; /* Verde oliva más oscuro */
+            color: #556b2f;
             font-weight: bold;
         }
+
         .container {
             max-width: 1000px;
             margin: 0 auto;
             padding: 2rem;
         }
+
         .sobre-mi-grid {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
             gap: 2rem;
         }
+
         .imagen-sobre-mi img {
             width: 250px;
             height: 250px;
             object-fit: cover;
-            border: 4px solid #556b2f; /* Verde oliva más oscuro */
-            border-radius: 16px;
+            border: 4px solid #556b2f;
+            border-radius: 50%;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         }
+
         h1 {
-            font-family: 'Comic Neue', cursive;
             font-size: 3rem;
-            color: #556b2f; /* Verde oliva más oscuro */
-        }
-        h2, h3 {
             color: #556b2f;
         }
+
+        h2, h3 {
+            color: #000;
+        }
+
         .boton {
             display: inline-block;
-            background-color: #a5d6a7; /* Verde oliva */
-            color: #4a148c;
+            background-color: #a5d6a7;
+            color: #000;
             padding: 0.5rem 1rem;
             border-radius: 25px;
             text-decoration: none;
             font-weight: bold;
             margin-top: 0.5rem;
         }
+
         .email-contacto {
             margin-top: 1rem;
             font-size: 1.1rem;
         }
+
         footer {
             text-align: center;
             padding: 1rem;
@@ -79,30 +88,22 @@
             color: #4a148c;
             font-size: 0.9rem;
         }
+
         .proyecto {
             margin-bottom: 3rem;
         }
-        .portada-proyecto {
-            position: relative;
-            display: inline-block;
-        }
+
         .portada-proyecto img {
-            width: 100%;
+            width: 50%;
             height: auto;
             border-radius: 16px;
-            cursor: pointer;
-        }
-        .contenido-portada {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            background-color: rgba(0, 0, 0, 0.6);
-            color: #fff;
-            padding: 1rem;
-            border-radius: 8px;
-        }
-        .portada-proyecto a {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             display: block;
+            margin: 0 auto;
+        }
+
+        .portada-proyecto {
+            text-align: center;
         }
     </style>
 </head>
@@ -111,9 +112,9 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#sobre-mi">🏷 Sobre mí</a></li>
+                <li><a href="#proyectos">🏷 Proyectos</a></li>
+                <li><a href="#contacto">🏷 Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -131,29 +132,25 @@
     </section>
 
     <section id="proyectos">
-     <div class="container">
-         <h2>🌟 Proyectos destacados</h2>
-         
-         <!-- Proyecto 1: Análisis sobre la masculinidad en el siglo XXI -->
-         <div class="proyecto">
-             <div class="portada-proyecto">
-                 <a href="https://github.com/NuriaSalasVazquez/da-project-promo-49-modulo-4-team-9" target="_blank">
-                     <img src="https://www.uv.es/recursos/fatwirepub/ccurl/713/721/homes_igualtat.jpg" alt="Portada Proyecto Masculinidad">
-                 </a>
-                 <div class="contenido-portada">
-                     <h3>💥 Análisis sobre la masculinidad en el siglo XXI</h3>
-                     <p>Este proyecto explora el perfil social y psicológico de los hombres en el siglo XXI, abordando temas de masculinidad y cómo estos se reflejan en diferentes contextos.</p>
-                 </div>
-             </div>
-             <a href="https://github.com/NuriaSalasVazquez/da-project-promo-49-modulo-4-team-9" target="_blank" class="boton">Ver repositorio en GitHub</a>
-             <p><a href="https://public.tableau.com/views/SerunHombreenelSXXIUnaTragediaen6Actos_/Introduction?:language=es-ES&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" class="boton">Ver proyecto en Tableau</a></p>
-         </div>
-     </div>
- </section>
+        <div class="container">
+            <h2>🏷 Proyectos destacados</h2>
+
+            <div class="proyecto">
+                <div class="portada-proyecto">
+                    <a href="https://public.tableau.com/views/SerunHombreenelSXXIUnaTragediaen6Actos_/Introduction?:language=es-ES&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">
+                        <img src="https://www.uv.es/recursos/fatwirepub/ccurl/713/721/homes_igualtat.jpg" alt="Portada Proyecto Masculinidad">
+                    </a>
+                </div>
+                <h3>🏷 Análisis sobre la masculinidad en el siglo XXI</h3>
+                <p>Este proyecto explora el perfil social y psicológico de los hombres en el siglo XXI, abordando temas de masculinidad y cómo estos se reflejan en diferentes contextos.</p>
+                <a href="https://public.tableau.com/views/SerunHombreenelSXXIUnaTragediaen6Actos_/Introduction?:language=es-ES&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" class="boton">Ver proyecto en Tableau</a>
+            </div>
+        </div>
+    </section>
 
     <section id="contacto">
         <div class="container">
-            <h2>📬 Contacto</h2>
+            <h2>🏷 Contacto</h2>
             <p>Puedes contactarme a través de LinkedIn o enviándome un correo electrónico.</p>
             <a href="https://www.linkedin.com/in/nuria-salas-vazquez/" target="_blank" class="boton">Conectar en LinkedIn</a>
             <p class="email-contacto">📧 nebeda77@gmail.com</p>
