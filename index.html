@@ -2,187 +2,191 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio de Nuria Salas</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <style>
-    :root {
-      --primary-color: #556b2f;
-      --accent-color: #a5d6a7;
-      --bg-gradient: linear-gradient(to right, #f7fdf7, #f8f5fc);
-      --text-color: #212121;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background: var(--bg-gradient);
-      color: var(--text-color);
-      line-height: 1.6;
-    }
-
-    header {
-      background-color: var(--accent-color);
-      padding: 1.5rem 2rem;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    nav ul {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      list-style: none;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: var(--text-color);
-      font-weight: 600;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: var(--primary-color);
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 3rem 1.5rem;
-    }
-
-    .sobre-mi-grid {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      gap: 2rem;
-    }
-
-    .imagen-sobre-mi img {
-      width: 160px;
-      height: 160px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 3px solid var(--primary-color);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-    }
-
-    h2 {
-      font-size: 2rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
-    }
-
-    .proyecto {
-      margin-top: 3rem;
-    }
-
-    .proyecto img {
-      width: 100%;
-      max-width: 300px;
-      border-radius: 12px;
-      transition: transform 0.3s;
-    }
-
-    .proyecto img:hover {
-      transform: scale(1.05);
-    }
-
-    .boton {
-      display: inline-block;
-      background-color: var(--primary-color);
-      color: #fff;
-      padding: 0.7rem 1.4rem;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: 600;
-      margin-top: 1rem;
-      transition: background-color 0.3s;
-    }
-
-    .boton:hover {
-      background-color: #6b8e23;
-    }
-
-    .contacto {
-      text-align: center;
-    }
-
-    footer {
-      background-color: #f1f1f1;
-      padding: 1rem;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #555;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio de Nuria Salas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Raleway', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            scroll-behavior: smooth;
+        }
+        nav {
+            background-color: #1e1e1e;
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: #ffb347;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffffff;
+        }
+        header {
+            background-color: #1e1e1e;
+            padding: 2rem 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 2rem;
+        }
+        .nombre-presentacion {
+            flex: 1;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            color: #ffb347;
+        }
+        header p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .imagen-sobre-mi img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        }
+        h2, h3 {
+            color: #ffa07a;
+        }
+        .boton {
+            display: inline-block;
+            background-color: #2e7d32;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 0.5rem;
+            transition: background-color 0.3s;
+        }
+        .boton:hover {
+            background-color: #1b5e20;
+        }
+        .email-contacto {
+            margin-top: 1rem;
+            font-size: 1.1rem;
+        }
+        .proyecto {
+            margin-bottom: 3rem;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.5s forwards;
+        }
+        .proyecto:nth-child(even) {
+            animation-delay: 0.3s;
+        }
+        .proyecto:nth-child(odd) {
+            animation-delay: 0.5s;
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .portada-proyecto {
+            width: 100%;
+            max-width: 80px;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+        .portada-proyecto img {
+            width: 100%;
+            border-radius: 1rem;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+            transition: transform 0.3s;
+        }
+        .portada-proyecto img:hover {
+            transform: scale(1.1);
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #1e1e1e;
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 
 <body>
-  <header>
     <nav>
-      <ul>
-        <li><a href="#sobre-mi">🏷 Sobre mí</a></li>
-        <li><a href="#proyectos">🏷 Proyectos</a></li>
-        <li><a href="#contacto">🏷 Contacto</a></li>
-      </ul>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
     </nav>
-  </header>
 
-  <section id="sobre-mi">
-    <div class="container sobre-mi-grid">
-      <div class="contenido">
-        <h1>¡Hola! Soy Nuria Salas</h1>
-        <p>Analista de datos en formación con pasión por la visualización y el análisis de datos. Estoy aprendiendo a utilizar herramientas como Tableau, Power BI, Python y SQL para contar historias con datos.</p>
-      </div>
-      <div class="imagen-sobre-mi">
-        <img src="https://github.com/NuriaSalasVazquez/portfolio_nuri/blob/main/foto%20Nuri%20transp.png?raw=true" alt="Foto de Nuria Salas" />
-      </div>
-    </div>
-  </section>
+    <header>
+        <div class="imagen-sobre-mi">
+            <a href="https://github.com/NuriaSalasVazquez" target="_blank">
+                <img src="https://github.com/NuriaSalasVazquez/portfolio_nuri/blob/main/foto%20Nuri%20transp.png?raw=true" alt="Foto de Nuria Salas">
+            </a>
+        </div>
+        <div class="nombre-presentacion">
+            <h1>Nuria Salas Vázquez</h1>
+            <p>Soy analista de datos en formación, apasionada por encontrar patrones en los datos y convertirlos en historias claras y comprensibles. Durante mi formación, he adquirido experiencia trabajando con herramientas como Python, SQL, Tableau y Power BI, y he colaborado en diversos proyectos analíticos.</p>
+            <p>Me especializo en el análisis de datos sociales y de comportamiento, lo que me ha permitido desarrollar una gran capacidad para interpretar y visualizar datos con el objetivo de brindar soluciones prácticas a problemas complejos. Mi enfoque se centra en aprender constantemente y en colaborar con equipos para crear soluciones innovadoras y eficaces.</p>
+        </div>
+    </header>
 
-  <section id="proyectos">
-    <div class="container">
-      <h2>🏷 Proyectos destacados</h2>
+    <section id="proyectos">
+        <div class="container">
+            <h2>🏷 Proyectos destacados</h2>
 
-      <div class="proyecto">
-        <a href="https://github.com/NuriaSalasVazquez/da-project-promo-49-modulo-4-team-9" target="_blank">
-          <img src="https://www.uv.es/recursos/fatwirepub/ccurl/713/721/homes_igualtat.jpg" alt="Proyecto Masculinidad" />
-        </a>
-        <h3>🏷 Análisis sobre la masculinidad en el siglo XXI</h3>
-        <p>Este proyecto explora el perfil social y psicológico de los hombres en el siglo XXI, abordando temas de masculinidad y cómo estos se reflejan en diferentes contextos.</p>
-        <a href="https://public.tableau.com/views/SerunHombreenelSXXIUnaTragediaen6Actos_/Introduction?:language=es-ES&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" class="boton">Ver proyecto en Tableau</a>
-      </div>
-    </div>
-  </section>
+            <div class="proyecto">
+                <h3>🏷 Análisis sobre la masculinidad en el siglo XXI</h3>
+                <p><strong>Colaboración:</strong> Andrea Gauger</p>
+                <a class="portada-proyecto" href="https://github.com/NuriaSalasVazquez/da-project-promo-49-modulo-4-team-9" target="_blank">
+                    <img src="https://www.uv.es/recursos/fatwirepub/ccurl/713/721/homes_igualtat.jpg" alt="Proyecto Masculinidad">
+                </a>
+                <p>Este proyecto explora el perfil social y psicológico de los hombres en el siglo XXI, abordando temas de masculinidad y cómo estos se reflejan en diferentes contextos.</p>
+                <p><a href="https://public.tableau.com/views/SerunHombreenelSXXIUnaTragediaen6Actos_/Introduction?:language=es-ES&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" class="boton">Ver proyecto en Tableau</a></p>
+            </div>
 
-  <section id="contacto">
-    <div class="container contacto">
-      <h2>🏷 Contacto</h2>
-      <p>Puedes contactarme a través de LinkedIn o enviándome un correo electrónico.</p>
-      <a href="https://www.linkedin.com/in/nuria-salas-vazquez/" target="_blank" class="boton">Conectar en LinkedIn</a>
-      <p class="email-contacto">📧 nebeda77@gmail.com</p>
-    </div>
-  </section>
+            <div class="proyecto">
+                <h3>🏷 Perfil de los asesinos en serie</h3>
+                <p><strong>Colaboración:</strong> Cibelle Busnello</p>
+                <a class="portada-proyecto" href="https://github.com/NuriaSalasVazquez/Proyecto_Modulo4_PowerBI" target="_blank">
+                    <img src="https://m.media-amazon.com/images/S/pv-target-images/695560498751993c53f2b01517eeab61d005a5a4595108be29afdd31d9741831._SX1080_FMjpg_.jpg" alt="Proyecto Serial Killers">
+                </a>
+                <p>Proyecto que utiliza Python para el análisis exploratorio de datos y Power BI para visualizar el perfil de los asesinos en serie. Los datos fueron obtenidos de Wikipedia.</p>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Nuria Salas. Todos los derechos reservados.</p>
-  </footer>
+    <section id="contacto">
+        <div class="container">
+            <h2>🏷 Contacto</h2>
+            <p>Puedes contactarme a través de LinkedIn o enviándome un correo electrónico.</p>
+            <a href="https://www.linkedin.com/in/nuria-salas-vazquez/" target="_blank" class="boton">Conectar en LinkedIn</a>
+            <p class="email-contacto">📧 nebeda77@gmail.com</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Nuria Salas. Todos los derechos reservados.</p>
+    </footer>
 </body>
 
 </html>
