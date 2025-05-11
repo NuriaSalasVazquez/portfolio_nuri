@@ -2,276 +2,174 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nuria Salas Vázquez - Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/1c3744e5db.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Nuria Salas Vázquez</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <style>
     body {
+      font-family: 'Arial', sans-serif;
+      background-color: #121212;
+      color: #ffffff;
       margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #f9f9f9;
-      color: #1a1a1a;
+      padding: 0;
     }
-
     header {
       text-align: center;
-      padding: 40px 20px;
+      padding: 50px 0;
+      background-color: #121212;
     }
-
     header img {
-      width: 140px;
-      height: 140px;
+      width: 150px;
       border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid #4dabf7;
+    }
+    header h1 {
+      font-size: 2.5em;
+      color: #ffffff;
+      margin: 20px 0;
+    }
+    header p {
+      font-size: 1.2em;
+      color: #ffffff;
+    }
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: 2.2em;
+      color: #ffffff;
       margin-bottom: 20px;
     }
-
-    h1 {
-      font-size: 2.5em;
-      margin: 0;
-    }
-
-    h2 {
-      color: #4dabf7;
-      font-weight: 300;
-      margin-top: 5px;
-    }
-
-    .about {
-      text-align: center;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 0 20px 40px;
-      font-size: 1.1em;
-    }
-
-    .social-icons {
-      margin: 20px 0;
-    }
-
-    .social-icons .button {
-      background-color: #4dabf7;
-      color: white;
-      padding: 12px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-size: 1.1em;
-      margin: 5px;
-      display: inline-flex;
-      align-items: center;
-      transition: background-color 0.3s, transform 0.3s;
-    }
-
-    .social-icons .button:hover {
-      background-color: #0077b6;
-      transform: scale(1.1);
-    }
-
-    .social-icons .button i {
-      margin-right: 8px;
-    }
-
     .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-      padding: 40px 20px;
-      max-width: 1200px;
-      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
     }
-
     .project-card {
-      background: #ffffff;
-      border: 2px solid #ffe066;
-      border-radius: 12px;
+      background-color: #1a1a1a;
+      width: 45%;
       padding: 20px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-      position: relative;
-    }
-
-    .project-card h3 {
-      margin-top: 0;
-      color: #ff4d9e;
-      display: flex;
-      align-items: center;
-      font-size: 1.8em;
-    }
-
-    .project-card h3 i {
-      margin-right: 10px;
-      font-size: 1.5em;
-    }
-
-    .button-project {
-      display: inline-block;
-      margin-top: 10px;
-      background-color: #4dabf7;
-      color: white;
-      padding: 12px 18px;
+      margin: 10px;
       border-radius: 8px;
-      text-decoration: none;
-      transition: background-color 0.3s, transform 0.3s;
-      font-weight: 500;
-      text-align: center;
-      font-size: 1.2em;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     }
-
-    .button-project:hover {
-      background-color: #0077b6;
-      transform: scale(1.05);
-    }
-
-    .button-project .fab, .button-project .fas {
-      margin-right: 8px;
-    }
-
-    .tableau-btn, .powerbi-btn {
-      display: inline-block;
-      background-color: #ff8c00;
-      color: white;
-      padding: 18px 28px;
-      border-radius: 50px;
-      margin-top: 20px;
-      text-decoration: none;
-      font-size: 1.4em;
-      position: relative;
-      overflow: hidden;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      transition: all 0.3s;
-      display: flex;
-      align-items: center;
-    }
-
-    .tableau-btn:hover, .powerbi-btn:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-    }
-
-    .tableau-btn:before, .powerbi-btn:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
+    .project-card img {
       width: 100%;
-      height: 100%;
-      background: #ffffff;
-      opacity: 0.2;
-      transition: opacity 0.3s;
+      border-radius: 8px;
     }
-
-    .tableau-btn:hover:before, .powerbi-btn:hover:before {
-      opacity: 0.4;
+    .btn {
+      background-color: #ff8c00;
+      padding: 15px;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 1.2em;
+      margin-top: 15px;
+      display: inline-block;
+      transition: background-color 0.3s;
     }
-
-    .tableau-btn img, .powerbi-btn img {
-      width: 30px;
-      height: 30px;
-      margin-right: 10px;
+    .btn:hover {
+      background-color: #00bcd4;
     }
-
-    footer {
+    .footer {
+      background-color: #121212;
       text-align: center;
       padding: 20px;
-      font-size: 0.9em;
-      color: #555;
     }
-
-    footer a {
-      color: #4dabf7;
+    .footer a {
+      color: #ffffff;
       text-decoration: none;
+      font-size: 1.2em;
+      margin: 0 15px;
     }
-
-    .entry-title {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    .footer a:hover {
+      color: #ff8c00;
+    }
+    .social-icons i {
       font-size: 2em;
-      color: #ff4d9e;
-      margin: 20px 0;
+      margin: 0 15px;
+      color: #ffffff;
+      transition: color 0.3s;
     }
-
-    .entry-title i {
-      margin-right: 10px;
-      font-size: 2.2em;
+    .social-icons i:hover {
+      color: #ff8c00;
+    }
+    .btn-image {
+      display: inline-block;
+      padding: 15px;
+      border-radius: 5px;
+      text-align: center;
+      margin: 15px;
+      width: 200px;
+      background-color: #121212;
+      border: 2px solid #00bcd4;
+    }
+    .btn-image img {
+      width: 100px;
+      margin-bottom: 10px;
+    }
+    .btn-image a {
+      text-decoration: none;
+      font-size: 1.2em;
+      color: #ffffff;
+    }
+    .btn-image:hover {
+      background-color: #00bcd4;
+      border-color: #ff8c00;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="https://github.com/NuriaSalasVazquez/portfolio_nuri/blob/main/foto%20Nuri%20transp.png?raw=true" alt="Foto de Nuria Salas Vázquez" />
+    <img src="https://github.com/NuriaSalasVazquez/portfolio_nuri/blob/main/foto%20Nuri%20transp.png?raw=true" alt="Nuria Salas Vázquez">
     <h1>Nuria Salas Vázquez</h1>
-    <h2>Analista de Datos | Python · SQL · Power BI · Tableau</h2>
-
-    <div class="social-icons">
-      <a href="https://github.com/NuriaSalasVazquez" target="_blank" class="button" title="GitHub">
-        <i class="fab fa-github"></i> GitHub
-      </a>
-      <a href="https://www.linkedin.com/in/nuria-salas-vazquez/" target="_blank" class="button" title="LinkedIn">
-        <i class="fab fa-linkedin"></i> LinkedIn
-      </a>
-      <a href="mailto:needa77@gmail.com" class="button" title="Correo">
-        <i class="fas fa-envelope"></i> Correo
-      </a>
-    </div>
+    <p>Analista de Datos | Power BI, Tableau, SQL, Python</p>
   </header>
 
-  <section class="about">
-    <p>
-      Soy una profesional en transición hacia el análisis de datos. He trabajado en proyectos que combinan datos y
-      narrativa para abordar temas como los perfiles criminales o los discursos sobre la masculinidad. Me apasiona
-      descubrir patrones y contar historias a través de los datos.
-    </p>
-  </section>
-
-  <section class="entry-title">
-    <i class="fas fa-project-diagram"></i>
-    <h3>Proyectos</h3>
-  </section>
-
-  <section class="projects">
-    <div class="project-card">
-      <h3><i class="fas fa-skull-crossbones"></i>Análisis de Asesinos en Serie</h3>
-      <p>Proyecto con Power BI sobre patrones criminales y perfilado de asesinos seriales.</p>
-      <p><strong>Colaboradoras:</strong> <a href="https://www.linkedin.com/in/cibelle-busnello/" target="_blank">Cibelle Busnello</a></p>
-      <a href="https://github.com/NuriaSalasVazquez/Proyecto_Modulo4_PowerBI" class="button-project" target="_blank">
-        <i class="fab fa-github"></i>Ver en GitHub
-      </a>
-      <div class="links-extra">
-        <a href="https://github.com/NuriaSalasVazquez/Proyecto_Modulo4_PowerBI/blob/main/Power%20BI/Final%20Project%20-%20prensentacion.pbix" target="_blank">
-          📄 Ver archivo Power BI (.pbix)
-        </a>
+  <div class="section">
+    <h2>Mis Proyectos</h2>
+    <div class="projects">
+      <!-- Proyecto Masculinidad -->
+      <div class="project-card">
+        <h3>Análisis de la Masculinidad</h3>
+        <p>Una perspectiva crítica y feminista sobre la masculinidad en el siglo XXI.</p>
+        <a href="https://public.tableau.com/app/profile/nuria.salas.vazquez/viz/SerunHombreenelSXXIUnaTragediaen6Actos_/Introduction" target="_blank" class="btn">Ver en Tableau</a>
       </div>
-      <a href="https://github.com/NuriaSalasVazquez/Proyecto_Modulo4_PowerBI" target="_blank" class="powerbi-btn">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Power_BI_Logo_2019.svg" alt="Power BI Icon" />
-        Ver Proyecto en Power BI
-      </a>
-    </div>
-
-    <div class="project-card">
-      <h3><i class="fas fa-mars"></i>Análisis de la Masculinidad (Perspectiva Crítica y Feminista)</h3>
-      <p>Proyecto con Python y Tableau que explora los discursos sociales sobre la masculinidad.</p>
-      <p><strong>Colaboradoras:</strong> <a href="https://www.linkedin.com/in/andrea-gauger/" target="_blank">Andrea Gauger</a></p>
-      <a href="https://github.com/NuriaSalasVazquez/masculinidad" class="button-project" target="_blank">
-        <i class="fab fa-github"></i>Ver en GitHub
-      </a>
-      <div class="links-extra">
-        <a href="https://public.tableau.com/app/profile/nuria.salas.vazquez/viz/SerunHombreenelSXXIUnaTragediaen6Actos_/Introduction" target="_blank">
-          📊 Ver en Tableau
-        </a>
+      <!-- Proyecto Asesinos en Serie -->
+      <div class="project-card">
+        <h3>Análisis de Asesinos en Serie</h3>
+        <p>Explorando patrones y estadísticas de asesinos en serie a través de Power BI.</p>
+        <a href="https://github.com/NuriaSalasVazquez/Proyecto_Modulo4_PowerBI/blob/main/Power%20BI/Final%20Project%20-%20prensentacion.pbix" target="_blank" class="btn">Ver en Power BI</a>
       </div>
-      <a href="https://public.tableau.com/app/profile/nuria.salas.vazquez/viz/SerunHombreenelSXXIUnaTragediaen6Actos_/Introduction" target="_blank" class="tableau-btn">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Tableau_Logo.svg" alt="Tableau Icon" />
-        Ver Proyecto en Tableau
-      </a>
     </div>
-  </section>
+  </div>
+
+  <div class="footer">
+    <h2>Contacta conmigo</h2>
+    <div class="social-icons">
+      <!-- Enlaces con iconos -->
+      <a href="https://www.linkedin.com/in/nuria-salas-vazquez/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:needa77@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/NuriaSalasVazquez" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+    <p>© 2025 Nuria Salas Vázquez. Todos los derechos reservados.</p>
+  </div>
 
   <footer>
-    <p>© 2025 Nuria Salas Vázquez. Todos los derechos reservados.</p>
+    <div class="btn-image">
+      <a href="https://public.tableau.com/app/profile/nuria.salas.vazquez/viz/SerunHombreenelSXXIUnaTragediaen6Actos_/Introduction" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Tableau_Logo.png" alt="Logo Tableau">
+        Ver en Tableau
+      </a>
+    </div>
+    <div class="btn-image">
+      <a href="https://github.com/NuriaSalasVazquez/Proyecto_Modulo4_PowerBI/blob/main/Power%20BI/Final%20Project%20-%20prensentacion.pbix" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Power_BI_Logo.svg" alt="Logo Power BI">
+        Ver en Power BI
+      </a>
+    </div>
   </footer>
 
 </body>
