@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -51,16 +52,26 @@
       margin: 20px 0;
     }
 
-    .social-icons a {
-      color: #1a1a1a;
-      font-size: 2em;
-      margin: 0 15px;
-      transition: transform 0.3s, color 0.3s;
+    .social-icons .button {
+      background-color: #4dabf7;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1.1em;
+      margin: 5px;
+      display: inline-flex;
+      align-items: center;
+      transition: background-color 0.3s, transform 0.3s;
     }
 
-    .social-icons a:hover {
-      transform: scale(1.2);
-      color: #ff4d9e;
+    .social-icons .button:hover {
+      background-color: #0077b6;
+      transform: scale(1.1);
+    }
+
+    .social-icons .button i {
+      margin-right: 8px;
     }
 
     .projects {
@@ -94,13 +105,7 @@
       font-size: 1.5em;
     }
 
-    .project-card .icon {
-      font-size: 2em;
-      margin-bottom: 10px;
-      color: #ffb347;
-    }
-
-    .button {
+    .button-project {
       display: inline-block;
       margin-top: 10px;
       background-color: #4dabf7;
@@ -114,12 +119,12 @@
       font-size: 1.2em;
     }
 
-    .button:hover {
+    .button-project:hover {
       background-color: #0077b6;
       transform: scale(1.05);
     }
 
-    .button .fab, .button .fas {
+    .button-project .fab, .button-project .fas {
       margin-right: 8px;
     }
 
@@ -170,9 +175,15 @@
     <h2>Analista de Datos | Python · SQL · Power BI · Tableau</h2>
 
     <div class="social-icons">
-      <a href="https://github.com/NuriaSalasVazquez" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/nuria-salas-vazquez/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      <a href="mailto:needa77@gmail.com" title="Correo"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/NuriaSalasVazquez" target="_blank" class="button" title="GitHub">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/nuria-salas-vazquez/" target="_blank" class="button" title="LinkedIn">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      <a href="mailto:needa77@gmail.com" class="button" title="Correo">
+        <i class="fas fa-envelope"></i> Correo
+      </a>
     </div>
   </header>
 
@@ -194,7 +205,7 @@
       <h3><i class="fas fa-skull-crossbones"></i>Análisis de Asesinos en Serie</h3>
       <p>Proyecto con Power BI sobre patrones criminales y perfilado de asesinos seriales.</p>
       <p><strong>Colaboradoras:</strong> <a href="https://www.linkedin.com/in/cibelle-busnello/" target="_blank">Cibelle Busnello</a></p>
-      <a href="https://github.com/NuriaSalasVazquez/Proyecto_Modulo4_PowerBI" class="button" target="_blank">
+      <a href="https://github.com/NuriaSalasVazquez/Proyecto_Modulo4_PowerBI" class="button-project" target="_blank">
         <i class="fab fa-github"></i>Ver en GitHub
       </a>
       <div class="links-extra">
@@ -208,7 +219,7 @@
       <h3><i class="fas fa-mars"></i>Análisis de la Masculinidad (Perspectiva Crítica y Feminista)</h3>
       <p>Proyecto con Python y Tableau que explora los discursos sociales sobre la masculinidad.</p>
       <p><strong>Colaboradoras:</strong> <a href="https://www.linkedin.com/in/andrea-gauger/" target="_blank">Andrea Gauger</a></p>
-      <a href="https://github.com/NuriaSalasVazquez/masculinidad" class="button" target="_blank">
+      <a href="https://github.com/NuriaSalasVazquez/masculinidad" class="button-project" target="_blank">
         <i class="fab fa-github"></i>Ver en GitHub
       </a>
       <div class="links-extra">
