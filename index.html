@@ -11,79 +11,67 @@
         body {
             margin: 0;
             font-family: 'Raleway', sans-serif;
-            background-color: #1E1E1E; /* Fondo oscuro */
+            background-color: #121212;
             color: #ffffff;
             scroll-behavior: smooth;
         }
-
         nav {
-            background-color: #2C2C2C;
+            background-color: #1e1e1e;
             padding: 1rem;
             text-align: center;
             position: sticky;
             top: 0;
             z-index: 1000;
         }
-
         nav a {
-            color: #FFB347; /* Dorado suave */
+            color: #ffb347;
             margin: 0 1rem;
             text-decoration: none;
             font-weight: bold;
             transition: color 0.3s;
         }
-
         nav a:hover {
             color: #ffffff;
         }
-
         header {
-            background-color: #2C2C2C;
+            background-color: #1e1e1e;
             padding: 2rem 1rem;
             display: flex;
             align-items: center;
             justify-content: flex-start;
             gap: 2rem;
         }
-
         .nombre-presentacion {
             flex: 1;
         }
-
         header h1 {
             margin: 0;
-            font-size: 2.5rem;
-            color: #FFB347; /* Dorado suave */
+            font-size: 2.2rem;
+            color: #ffb347;
         }
-
         header p {
             font-size: 1.2rem;
             max-width: 600px;
             line-height: 1.6;
         }
-
         .container {
             max-width: 1000px;
             margin: 0 auto;
             padding: 2rem;
         }
-
         .imagen-sobre-mi img {
             width: 150px;
             height: 150px;
             object-fit: cover;
             border-radius: 50%;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
         }
-
-        h2,
-        h3 {
-            color: #FFB347; /* Dorado suave */
+        h2, h3 {
+            color: #ffa07a;
         }
-
         .boton {
             display: inline-block;
-            background-color: #2E7D32; /* Verde suave */
+            background-color: #2e7d32;
             color: white;
             padding: 0.5rem 1rem;
             border-radius: 25px;
@@ -92,166 +80,47 @@
             margin-top: 0.5rem;
             transition: background-color 0.3s;
         }
-
         .boton:hover {
-            background-color: #1B5E20; /* Verde oscuro */
+            background-color: #1b5e20;
         }
-
         .email-contacto {
             margin-top: 1rem;
             font-size: 1.1rem;
+            display: flex;
+            align-items: center;
         }
-
-        .email-contacto i {
-            margin-right: 8px;
-            color: #FFB347; /* Dorado suave */
+        .email-contacto a {
+            margin-right: 1rem;
         }
-
         .proyecto {
             margin-bottom: 3rem;
             transition: transform 0.3s;
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.6s, transform 0.6s;
         }
-
-        .proyecto.visible {
-            opacity: 1;
-            transform: translateY(0);
+        .proyecto:hover {
+            transform: scale(1.02);
         }
-
         .portada-proyecto {
             width: 100%;
-            max-width: 100%; /* Se ajusta para ocupar el ancho completo */
+            max-width: 150px;
             margin-bottom: 1rem;
             display: inline-block;
         }
-
         .portada-proyecto img {
             width: 100%;
             border-radius: 1rem;
             cursor: pointer;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.6);
             transition: transform 0.3s;
         }
-
         .portada-proyecto img:hover {
             transform: scale(1.1);
         }
-
         footer {
             text-align: center;
             padding: 1rem;
-            background-color: #2C2C2C;
+            background-color: #1e1e1e;
             color: #ccc;
             font-size: 0.9rem;
-        }
-
-        .parallax {
-            background-image: url('tu-imagen.jpg');
-            height: 500px;
-            background-position: center;
-            background-attachment: fixed;
-            background-size: cover;
-        }
-
-        .scroll-to-top {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #FF8C00; /* Naranja */
-            color: white;
-            border: none;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            font-size: 1.5rem;
-            cursor: pointer;
-            display: none;
-            transition: opacity 0.3s;
-        }
-
-        .scroll-to-top:hover {
-            background-color: #FF6F00;
-        }
-
-        .scroll-to-top.visible {
-            display: block;
-        }
-
-        .social-icon {
-            display: inline-block;
-            margin-right: 1rem;
-        }
-
-        .social-icon img {
-            width: 30px;
-            height: 30px;
-            transition: transform 0.3s;
-        }
-
-        .social-icon:hover img {
-            transform: scale(1.2);
-        }
-
-        .proyecto-card {
-            background-color: #2C2C2C;
-            border-radius: 8px;
-            padding: 1rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s;
-        }
-
-        .proyecto-card:hover {
-            transform: scale(1.05);
-        }
-
-        .proyecto-card img {
-            width: 100%;
-            border-radius: 5px;
-        }
-
-        .proyecto-card h3 {
-            color: #FF8C00;
-            margin-top: 1rem;
-        }
-
-        .proyecto-card p {
-            color: #ffffff;
-            line-height: 1.6;
-        }
-
-        .sobre-mi {
-            background-color: #2C2C2C;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
-            margin-bottom: 3rem;
-        }
-
-        .sobre-mi h2 {
-            color: #FF8C00;
-            font-size: 2rem;
-        }
-
-        .sobre-mi p {
-            color: #ffffff;
-            font-size: 1.1rem;
-            line-height: 1.6;
-        }
-
-        .contacto {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        /* Ajuste de los iconos */
-        .social-icon i {
-            font-size: 2rem;
         }
     </style>
 </head>
@@ -259,6 +128,7 @@
 <body>
     <nav>
         <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
     </nav>
 
     <header>
@@ -270,18 +140,20 @@
         <div class="nombre-presentacion">
             <h1>Nuria Salas Vázquez</h1>
             <p>Analista de datos en formación apasionada por descubrir patrones y convertir datos en narrativas significativas. Domino herramientas como Python, SQL, Tableau y Power BI. Me interesa el análisis social y colaborativo donde cada visualización transmite una historia clara y potente.</p>
+            <div class="email-contacto">
+                <a href="mailto:nebeda77@gmail.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Octicons-mail.svg/1024px-Octicons-mail.svg.png" alt="Correo Electrónico" width="24" height="24"></a>
+                <a href="https://www.linkedin.com/in/nuria-salas-vazquez/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/LinkedIn_icon.svg" alt="LinkedIn" width="24" height="24"></a>
+                <a href="https://github.com/NuriaSalasVazquez" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="24" height="24"></a>
+            </div>
         </div>
     </header>
-
-    <section class="parallax"></section>
 
     <section id="proyectos">
         <div class="container">
             <h2>🏷 Proyectos destacados</h2>
 
-            <div class="proyecto proyecto-card visible">
+            <div class="proyecto">
                 <h3>🏷 Análisis sobre la masculinidad en el siglo XXI</h3>
-                <p><strong>Colaboración:</strong> Andrea Gauger</p>
                 <a class="portada-proyecto" href="https://github.com/NuriaSalasVazquez/da-project-promo-49-modulo-4-team-9" target="_blank">
                     <img src="https://www.uv.es/recursos/fatwirepub/ccurl/713/721/homes_igualtat.jpg" alt="Proyecto Masculinidad">
                 </a>
@@ -289,62 +161,20 @@
                 <p><a href="https://public.tableau.com/views/SerunHombreenelSXXIUnaTragediaen6Actos_/Introduction?:language=es-ES&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" class="boton">Ver proyecto en Tableau</a></p>
             </div>
 
-            <div class="proyecto proyecto-card visible">
+            <div class="proyecto">
                 <h3>🏷 Proyecto Power BI: Análisis de Asesinos en Serie</h3>
-                <p><strong>Colaboración:</strong> Cibelle Busnello</p>
                 <a class="portada-proyecto" href="https://github.com/NuriaSalasVazquez/Proyecto_Modulo4_PowerBI" target="_blank">
                     <img src="https://m.media-amazon.com/images/S/pv-target-images/695560498751993c53f2b01517eeab61d005a5a4595108be29afdd31d9741831._SX1080_FMjpg_.jpg" alt="Proyecto Serial Killers">
                 </a>
-                <p>Este proyecto se basa en el análisis de datos sobre asesinos en serie, incluyendo patrones de víctimas y análisis de las penas impuestas. Utilizamos Power BI para crear un informe interactivo.</p>
-                <p><a href="https://app.powerbi.com/view?r=eyJrIjoiNzliZTgwZjUtMjYzZS00YzExLWIyZjItNzA4ZjJlMTVhZGE2IiwidCI6ImZlYmY1NzJjLWVmYzgtNDczZC1hYmZmLWJhZGY1ZjJlZTc4MiJ9" target="_blank" class="boton">Ver proyecto en Power BI</a></p>
+                <p>Proyecto que utiliza Python para el análisis exploratorio de datos y Power BI para visualizar el perfil de los asesinos en serie. Los datos fueron obtenidos de Wikipedia.</p>
+                <p><a href="https://github.com/CibiPB/project-da-promo-49-modulo-4-team-4/blob/main/Power%20BI/Final%20Project%20-%20prensentacion.pbix" target="_blank" class="boton">Ver archivo de Power BI</a></p>
             </div>
         </div>
     </section>
 
-    <section id="contacto" class="contacto">
-        <div class="email-contacto">
-            <i class="fas fa-envelope"></i>
-            <p><strong>Email:</strong> nuriasalasvazquez@gmail.com</p>
-        </div>
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/nuriasalasvazquez/" class="social-icon" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/LinkedIn_icon.svg" alt="LinkedIn">
-            </a>
-            <a href="https://github.com/NuriaSalasVazquez" class="social-icon" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub">
-            </a>
-        </div>
-    </section>
-
     <footer>
-        <p>&copy; 2025 Nuria Salas Vázquez. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Nuria Salas. Todos los derechos reservados.</p>
     </footer>
-
-    <button class="scroll-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑</button>
-
-    <script>
-        // Mostrar el botón de subir
-        window.onscroll = function () {
-            let scrollButton = document.querySelector('.scroll-to-top');
-            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-                scrollButton.classList.add('visible');
-            } else {
-                scrollButton.classList.remove('visible');
-            }
-        };
-
-        // Mostrar proyectos al hacer scroll
-        window.addEventListener('scroll', function () {
-            const projects = document.querySelectorAll('.proyecto');
-            projects.forEach(function (project) {
-                const position = project.getBoundingClientRect();
-                if (position.top < window.innerHeight) {
-                    project.classList.add('visible');
-                }
-            });
-        });
-    </script>
 </body>
 
 </html>
-
