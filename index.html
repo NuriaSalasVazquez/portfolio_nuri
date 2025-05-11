@@ -128,16 +128,48 @@
       margin-right: 8px;
     }
 
-    .links-extra {
-      margin-top: 8px;
-      font-size: 0.9em;
+    .tableau-btn, .powerbi-btn {
+      display: inline-block;
+      background-color: #ff8c00;
+      color: white;
+      padding: 18px 28px;
+      border-radius: 50px;
+      margin-top: 20px;
+      text-decoration: none;
+      font-size: 1.4em;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s;
+      display: flex;
+      align-items: center;
     }
 
-    .links-extra a {
-      color: #ff4d9e;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 4px;
+    .tableau-btn:hover, .powerbi-btn:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .tableau-btn:before, .powerbi-btn:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #ffffff;
+      opacity: 0.2;
+      transition: opacity 0.3s;
+    }
+
+    .tableau-btn:hover:before, .powerbi-btn:hover:before {
+      opacity: 0.4;
+    }
+
+    .tableau-btn img, .powerbi-btn img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
     }
 
     footer {
@@ -213,6 +245,10 @@
           📄 Ver archivo Power BI (.pbix)
         </a>
       </div>
+      <a href="https://github.com/NuriaSalasVazquez/Proyecto_Modulo4_PowerBI" target="_blank" class="powerbi-btn">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Power_BI_Logo_2019.svg" alt="Power BI Icon" />
+        Ver Proyecto en Power BI
+      </a>
     </div>
 
     <div class="project-card">
@@ -227,12 +263,17 @@
           📊 Ver en Tableau
         </a>
       </div>
+      <a href="https://public.tableau.com/app/profile/nuria.salas.vazquez/viz/SerunHombreenelSXXIUnaTragediaen6Actos_/Introduction" target="_blank" class="tableau-btn">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Tableau_Logo.svg" alt="Tableau Icon" />
+        Ver Proyecto en Tableau
+      </a>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 Nuria Salas Vázquez · <a href="https://github.com/NuriaSalasVazquez">GitHub</a></p>
+    <p>© 2025 Nuria Salas Vázquez. Todos los derechos reservados.</p>
   </footer>
 
 </body>
 </html>
+
