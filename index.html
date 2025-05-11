@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -15,173 +16,156 @@
             color: #ffffff;
             scroll-behavior: smooth;
         }
-        nav {
-            background-color: #1e1e1e;
-            padding: 1rem;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        nav a {
-            color: #ff8c00;
-            margin: 0 1rem;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: #ffffff;
-        }
         header {
-            background-color: #1e1e1e;
-            padding: 2rem 1rem;
             display: flex;
+            justify-content: space-between;
+            padding: 2rem;
             align-items: center;
-            justify-content: flex-start;
+            background-color: #1e1e1e;
+        }
+        .perfil {
+            display: flex;
             gap: 2rem;
+            align-items: center;
         }
-        .nombre-presentacion {
-            flex: 1;
+        .perfil img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
         }
-        header h1 {
+        .perfil h1 {
             margin: 0;
-            font-size: 2.2rem;
+            font-size: 2.5rem;
             color: #ff8c00;
         }
-        header p {
+        .perfil p {
             font-size: 1.2rem;
+            color: #ffffff;
             max-width: 600px;
             line-height: 1.6;
         }
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 2rem;
+        .proyectos {
+            padding: 3rem;
+            background-color: #1e1e1e;
         }
-        .imagen-sobre-mi img {
-            width: 180px;
-            height: 180px;
-            object-fit: cover;
-            border-radius: 50%;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        .proyectos h2 {
+            color: #ff8c00;
+            font-size: 2rem;
         }
-        h2, h3 {
-            color: #ffa07a;
+        .proyecto {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+        .proyecto img {
+            width: 250px;
+            height: 150px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+            transition: transform 0.3s ease;
+        }
+        .proyecto img:hover {
+            transform: scale(1.05);
         }
         .boton {
             display: inline-block;
-            background-color: #2e7d32;
-            color: white;
-            padding: 0.5rem 1rem;
+            background-color: #ff8c00;
+            color: #ffffff;
+            padding: 0.5rem 1.5rem;
             border-radius: 25px;
             text-decoration: none;
+            margin-top: 1rem;
             font-weight: bold;
-            margin-top: 0.5rem;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s ease;
         }
         .boton:hover {
-            background-color: #1b5e20;
+            background-color: #00bcd4;
         }
-        .email-contacto {
-            margin-top: 1rem;
-            font-size: 1.1rem;
+        .contacto {
+            padding: 2rem;
+            text-align: center;
+            background-color: #1e1e1e;
         }
-        .proyecto {
-            margin-bottom: 3rem;
-            transition: transform 0.3s;
+        .contacto a {
+            color: #00bcd4;
+            font-size: 1.2rem;
+            text-decoration: none;
+            transition: color 0.3s ease;
         }
-        .proyecto:hover {
-            transform: scale(1.02);
-        }
-        .portada-proyecto {
-            width: 100%;
-            max-width: 150px;
-            margin-bottom: 1rem;
-            display: inline-block;
-        }
-        .portada-proyecto img {
-            width: 100%;
-            border-radius: 1rem;
-            cursor: pointer;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.6);
-            transition: transform 0.3s;
-        }
-        .portada-proyecto img:hover {
-            transform: scale(1.1);
+        .contacto a:hover {
+            color: #ff8c00;
         }
         footer {
-            text-align: center;
+            background-color: #121212;
             padding: 1rem;
-            background-color: #1e1e1e;
+            text-align: center;
             color: #ccc;
-            font-size: 0.9rem;
         }
-        .iconos {
+        footer a {
+            margin: 0 1rem;
+            color: #00bcd4;
             font-size: 1.5rem;
-            margin-right: 1rem;
+            transition: color 0.3s ease;
+        }
+        footer a:hover {
+            color: #ff8c00;
         }
     </style>
 </head>
 
 <body>
-    <nav>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
 
     <header>
-        <div class="imagen-sobre-mi">
-            <a href="https://github.com/NuriaSalasVazquez" target="_blank">
-                <img src="https://github.com/NuriaSalasVazquez/portfolio_nuri/blob/main/foto%20Nuri%20transp.png?raw=true" alt="Foto de Nuria Salas">
-            </a>
-        </div>
-        <div class="nombre-presentacion">
-            <h1>Nuria Salas Vázquez</h1>
-            <p>Analista de datos en formación apasionada por descubrir patrones y convertir datos en narrativas significativas. Domino herramientas como Python, SQL, Tableau y Power BI. Me interesa el análisis social y colaborativo donde cada visualización transmite una historia clara y potente.</p>
-            <p><a href="mailto:nebeda77@gmail.com" class="iconos">📧</a><span>nebeda77@gmail.com</span></p>
-            <p><a href="https://www.linkedin.com/in/nuria-salas-vazquez/" target="_blank" class="iconos">🔗</a><span>LinkedIn</span></p>
+        <div class="perfil">
+            <img src="https://github.com/NuriaSalasVazquez/portfolio_nuri/blob/main/foto%20Nuri%20transp.png?raw=true" alt="Foto de Nuria Salas">
+            <div>
+                <h1>Nuria Salas Vázquez</h1>
+                <p>Analista de datos apasionada por descubrir patrones y convertir datos en narrativas significativas. Con experiencia en herramientas como Python, SQL, Tableau y Power BI.</p>
+            </div>
         </div>
     </header>
 
-    <section id="proyectos">
-        <div class="container">
-            <h2>🏷 Proyectos destacados</h2>
+    <section class="proyectos">
+        <h2>🏷 Proyectos destacados</h2>
 
-            <div class="proyecto">
-                <h3>🏷 Análisis sobre la masculinidad en el siglo XXI</h3>
-                <p><strong>Colaboración:</strong> Andrea Gauger</p>
-                <a class="portada-proyecto" href="https://github.com/NuriaSalasVazquez/da-project-promo-49-modulo-4-team-9" target="_blank">
-                    <img src="https://www.uv.es/recursos/fatwirepub/ccurl/713/721/homes_igualtat.jpg" alt="Proyecto Masculinidad">
-                </a>
-                <p>Este proyecto explora el perfil social y psicológico de los hombres en el siglo XXI, abordando temas de masculinidad y cómo estos se reflejan en diferentes contextos.</p>
-                <p><a href="https://public.tableau.com/views/SerunHombreenelSXXIUnaTragediaen6Actos_/Introduction?:language=es-ES&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" class="boton">Ver proyecto en Tableau</a></p>
-            </div>
+        <div class="proyecto">
+            <h3>🏷 Análisis sobre la masculinidad en el siglo XXI</h3>
+            <p><strong>Colaboración:</strong> Andrea Gauger</p>
+            <a href="https://github.com/NuriaSalasVazquez/da-project-promo-49-modulo-4-team-9" target="_blank">
+                <img src="https://www.uv.es/recursos/fatwirepub/ccurl/713/721/homes_igualtat.jpg" alt="Proyecto Masculinidad">
+            </a>
+            <p>Este proyecto explora el perfil social y psicológico de los hombres en el siglo XXI, abordando temas de masculinidad y cómo estos se reflejan en diferentes contextos.</p>
+            <a href="https://public.tableau.com/views/SerunHombreenelSXXIUnaTragediaen6Actos_/Introduction?:language=es-ES&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" class="boton">Ver proyecto en Tableau</a>
+        </div>
 
-            <div class="proyecto">
-                <h3>🏷 Proyecto Power BI: Análisis de Asesinos en Serie</h3>
-                <p><strong>Colaboración:</strong> Cibelle Busnello</p>
-                <a class="portada-proyecto" href="https://github.com/NuriaSalasVazquez/Proyecto_Modulo4_PowerBI" target="_blank">
-                    <img src="https://m.media-amazon.com/images/S/pv-target-images/695560498751993c53f2b01517eeab61d005a5a4595108be29afdd31d9741831._SX1080_FMjpg_.jpg" alt="Proyecto Serial Killers">
-                </a>
-                <p>Proyecto que utiliza Python para el análisis exploratorio de datos y Power BI para visualizar el perfil de los asesinos en serie. Los datos fueron obtenidos de Wikipedia.</p>
-                <p><a href="https://github.com/CibiPB/project-da-promo-49-modulo-4-team-4/blob/main/Power%20BI/Final%20Project%20-%20prensentacion.pbix" target="_blank" class="boton">Ver proyecto en Power BI</a></p>
-            </div>
+        <div class="proyecto">
+            <h3>🏷 Proyecto Power BI: Análisis de Asesinos en Serie</h3>
+            <p><strong>Colaboración:</strong> Cibelle Busnello</p>
+            <a href="https://github.com/NuriaSalasVazquez/Proyecto_Modulo4_PowerBI" target="_blank">
+                <img src="https://m.media-amazon.com/images/S/pv-target-images/695560498751993c53f2b01517eeab61d005a5a4595108be29afdd31d9741831._SX1080_FMjpg_.jpg" alt="Proyecto Serial Killers">
+            </a>
+            <p>Este proyecto utiliza Python para el análisis exploratorio de datos y Power BI para visualizar el perfil de los asesinos en serie.</p>
+            <a href="https://github.com/CibiPB/project-da-promo-49-modulo-4-team-4/blob/main/Power%20BI/Final%20Project%20-%20prensentacion.pbix" target="_blank" class="boton">Ver archivo Power BI</a>
         </div>
     </section>
 
-    <section id="contacto">
-        <div class="container">
-            <h2>🏷 Contacto</h2>
-            <p>Puedes contactarme a través de LinkedIn o enviándome un correo electrónico.</p>
-            <a href="https://www.linkedin.com/in/nuria-salas-vazquez/" target="_blank" class="boton">Conectar en LinkedIn</a>
-            <p class="email-contacto">📧 nebeda77@gmail.com</p>
-        </div>
+    <section class="contacto">
+        <h2>📧 Contacto</h2>
+        <p>Puedes contactarme a través de LinkedIn o enviándome un correo electrónico.</p>
+        <a href="https://www.linkedin.com/in/nuria-salas-vazquez/" target="_blank"><i class="fab fa-linkedin"></i> Conectar en LinkedIn</a>
+        <p><i class="fas fa-envelope"></i> nebeda77@gmail.com</p>
     </section>
 
     <footer>
         <p>&copy; 2025 Nuria Salas. Todos los derechos reservados.</p>
+        <a href="https://github.com/NuriaSalasVazquez" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/nuria-salas-vazquez/" target="_blank"><i class="fab fa-linkedin"></i></a>
     </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 
 </html>
