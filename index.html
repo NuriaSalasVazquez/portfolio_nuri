@@ -1,171 +1,132 @@
-
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio de Nuria Salas</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Raleway', sans-serif;
-            background-color: #121212;
-            color: #ffffff;
-            scroll-behavior: smooth;
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            padding: 2rem;
-            align-items: center;
-            background-color: #1e1e1e;
-        }
-        .perfil {
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-        }
-        .perfil img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 50%;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
-        }
-        .perfil h1 {
-            margin: 0;
-            font-size: 2.5rem;
-            color: #ff8c00;
-        }
-        .perfil p {
-            font-size: 1.2rem;
-            color: #ffffff;
-            max-width: 600px;
-            line-height: 1.6;
-        }
-        .proyectos {
-            padding: 3rem;
-            background-color: #1e1e1e;
-        }
-        .proyectos h2 {
-            color: #ff8c00;
-            font-size: 2rem;
-        }
-        .proyecto {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 2rem;
-        }
-        .proyecto img {
-            width: 250px;
-            height: 150px;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
-            transition: transform 0.3s ease;
-        }
-        .proyecto img:hover {
-            transform: scale(1.05);
-        }
-        .boton {
-            display: inline-block;
-            background-color: #ff8c00;
-            color: #ffffff;
-            padding: 0.5rem 1.5rem;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-top: 1rem;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-        .boton:hover {
-            background-color: #00bcd4;
-        }
-        .contacto {
-            padding: 2rem;
-            text-align: center;
-            background-color: #1e1e1e;
-        }
-        .contacto a {
-            color: #00bcd4;
-            font-size: 1.2rem;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        .contacto a:hover {
-            color: #ff8c00;
-        }
-        footer {
-            background-color: #121212;
-            padding: 1rem;
-            text-align: center;
-            color: #ccc;
-        }
-        footer a {
-            margin: 0 1rem;
-            color: #00bcd4;
-            font-size: 1.5rem;
-            transition: color 0.3s ease;
-        }
-        footer a:hover {
-            color: #ff8c00;
-        }
-    </style>
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nuria Salas - Analista de Datos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9f9f9;
+      color: #1a1a1a;
+    }
 
+    header {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #0077b6;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    h2 {
+      color: #0077b6;
+      font-weight: 300;
+      margin-top: 5px;
+    }
+
+    .about {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 1.1em;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .project-card {
+      background: #ffffff;
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      text-align: left;
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #0077b6;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #00b4d8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #555;
+      font-size: 0.9em;
+    }
+
+    footer a {
+      color: #0077b6;
+      text-decoration: none;
+    }
+  </style>
+</head>
 <body>
 
-    <header>
-        <div class="perfil">
-            <img src="https://github.com/NuriaSalasVazquez/portfolio_nuri/blob/main/foto%20Nuri%20transp.png?raw=true" alt="Foto de Nuria Salas">
-            <div>
-                <h1>Nuria Salas Vázquez</h1>
-                <p>Analista de datos apasionada por descubrir patrones y convertir datos en narrativas significativas. Con experiencia en herramientas como Python, SQL, Tableau y Power BI.</p>
-            </div>
-        </div>
-    </header>
+  <header>
+    <img src="https://github.com/NuriaSalasVazquez/portfolio_nuri/blob/main/foto%20Nuri%20transp.png?raw=true" alt="Foto de Nuria Salas" />
+    <h1>Nuria Salas</h1>
+    <h2>Analista de Datos | Python · SQL · Power BI · Tableau</h2>
+  </header>
 
-    <section class="proyectos">
-        <h2>🏷 Proyectos destacados</h2>
+  <section class="about">
+    <p>
+      Soy una profesional en transición hacia el análisis de datos, con formación en Python, SQL, Tableau y Power BI.
+      Me apasionan los proyectos con impacto social, como el análisis de la masculinidad o los patrones de criminalidad.
+    </p>
+  </section>
 
-        <div class="proyecto">
-            <h3>🏷 Análisis sobre la masculinidad en el siglo XXI</h3>
-            <p><strong>Colaboración:</strong> Andrea Gauger</p>
-            <a href="https://github.com/NuriaSalasVazquez/da-project-promo-49-modulo-4-team-9" target="_blank">
-                <img src="https://www.uv.es/recursos/fatwirepub/ccurl/713/721/homes_igualtat.jpg" alt="Proyecto Masculinidad">
-            </a>
-            <p>Este proyecto explora el perfil social y psicológico de los hombres en el siglo XXI, abordando temas de masculinidad y cómo estos se reflejan en diferentes contextos.</p>
-            <a href="https://public.tableau.com/views/SerunHombreenelSXXIUnaTragediaen6Actos_/Introduction?:language=es-ES&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" class="boton">Ver proyecto en Tableau</a>
-        </div>
+  <section class="projects">
+    <div class="project-card">
+      <h3>Asesinos en Serie</h3>
+      <p>Análisis de patrones de comportamiento y perfil criminal a través de visualizaciones interactivas en Power BI.</p>
+      <a href="https://github.com/tu_usuario/asesinos-en-serie" class="button" target="_blank">Ver Proyecto</a>
+    </div>
+    <div class="project-card">
+      <h3>Análisis de la Masculinidad</h3>
+      <p>Exploración de los discursos sociales sobre la masculinidad a través de datos cualitativos y Python + Tableau.</p>
+      <a href="https://github.com/tu_usuario/analisis-de-la-masculinidad" class="button" target="_blank">Ver Proyecto</a>
+    </div>
+  </section>
 
-        <div class="proyecto">
-            <h3>🏷 Proyecto Power BI: Análisis de Asesinos en Serie</h3>
-            <p><strong>Colaboración:</strong> Cibelle Busnello</p>
-            <a href="https://github.com/NuriaSalasVazquez/Proyecto_Modulo4_PowerBI" target="_blank">
-                <img src="https://m.media-amazon.com/images/S/pv-target-images/695560498751993c53f2b01517eeab61d005a5a4595108be29afdd31d9741831._SX1080_FMjpg_.jpg" alt="Proyecto Serial Killers">
-            </a>
-            <p>Este proyecto utiliza Python para el análisis exploratorio de datos y Power BI para visualizar el perfil de los asesinos en serie.</p>
-            <a href="https://github.com/CibiPB/project-da-promo-49-modulo-4-team-4/blob/main/Power%20BI/Final%20Project%20-%20prensentacion.pbix" target="_blank" class="boton">Ver archivo Power BI</a>
-        </div>
-    </section>
+  <footer>
+    <p>Conéctame en <a href="https://www.linkedin.com/in/nuria-salas-vazquez/" target="_blank">LinkedIn</a></p>
+  </footer>
 
-    <section class="contacto">
-        <h2>📧 Contacto</h2>
-        <p>Puedes contactarme a través de LinkedIn o enviándome un correo electrónico.</p>
-        <a href="https://www.linkedin.com/in/nuria-salas-vazquez/" target="_blank"><i class="fab fa-linkedin"></i> Conectar en LinkedIn</a>
-        <p><i class="fas fa-envelope"></i> nebeda77@gmail.com</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Nuria Salas. Todos los derechos reservados.</p>
-        <a href="https://github.com/NuriaSalasVazquez" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/nuria-salas-vazquez/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    </footer>
-
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
-
 </html>
