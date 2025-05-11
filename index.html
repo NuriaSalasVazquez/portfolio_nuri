@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -12,7 +11,7 @@
         body {
             margin: 0;
             font-family: 'Raleway', sans-serif;
-            background-color: #1E1E1E; /* Darker background for contrast */
+            background-color: #1E1E1E; /* Fondo oscuro */
             color: #ffffff;
             scroll-behavior: smooth;
         }
@@ -27,7 +26,7 @@
         }
 
         nav a {
-            color: #FFB347; /* Soft gold */
+            color: #FFB347; /* Dorado suave */
             margin: 0 1rem;
             text-decoration: none;
             font-weight: bold;
@@ -54,7 +53,7 @@
         header h1 {
             margin: 0;
             font-size: 2.5rem;
-            color: #FFB347; /* Soft gold */
+            color: #FFB347; /* Dorado suave */
         }
 
         header p {
@@ -70,8 +69,8 @@
         }
 
         .imagen-sobre-mi img {
-            width: 120px;
-            height: 120px;
+            width: 150px;
+            height: 150px;
             object-fit: cover;
             border-radius: 50%;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
@@ -79,12 +78,12 @@
 
         h2,
         h3 {
-            color: #FFB347; /* Soft gold */
+            color: #FFB347; /* Dorado suave */
         }
 
         .boton {
             display: inline-block;
-            background-color: #2E7D32; /* Soft green */
+            background-color: #2E7D32; /* Verde suave */
             color: white;
             padding: 0.5rem 1rem;
             border-radius: 25px;
@@ -95,12 +94,17 @@
         }
 
         .boton:hover {
-            background-color: #1B5E20; /* Darker green */
+            background-color: #1B5E20; /* Verde oscuro */
         }
 
         .email-contacto {
             margin-top: 1rem;
             font-size: 1.1rem;
+        }
+
+        .email-contacto i {
+            margin-right: 8px;
+            color: #FFB347; /* Dorado suave */
         }
 
         .proyecto {
@@ -118,7 +122,7 @@
 
         .portada-proyecto {
             width: 100%;
-            max-width: 80px;
+            max-width: 100%; /* Se ajusta para ocupar el ancho completo */
             margin-bottom: 1rem;
             display: inline-block;
         }
@@ -155,7 +159,7 @@
             position: fixed;
             bottom: 20px;
             right: 20px;
-            background-color: #FF8C00; /* Orange */
+            background-color: #FF8C00; /* Naranja */
             color: white;
             border: none;
             border-radius: 50%;
@@ -236,13 +240,25 @@
             font-size: 1.1rem;
             line-height: 1.6;
         }
+
+        .contacto {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        /* Ajuste de los iconos */
+        .social-icon i {
+            font-size: 2rem;
+        }
     </style>
 </head>
 
 <body>
     <nav>
         <a href="#proyectos">Proyectos</a>
-        <a href="#contacto">Contacto</a>
     </nav>
 
     <header>
@@ -254,7 +270,6 @@
         <div class="nombre-presentacion">
             <h1>Nuria Salas Vázquez</h1>
             <p>Analista de datos en formación apasionada por descubrir patrones y convertir datos en narrativas significativas. Domino herramientas como Python, SQL, Tableau y Power BI. Me interesa el análisis social y colaborativo donde cada visualización transmite una historia clara y potente.</p>
-            <p class="email-contacto"><strong>Email:</strong> nuriasalasvazquez@gmail.com</p>
         </div>
     </header>
 
@@ -286,7 +301,11 @@
         </div>
     </section>
 
-    <footer>
+    <section id="contacto" class="contacto">
+        <div class="email-contacto">
+            <i class="fas fa-envelope"></i>
+            <p><strong>Email:</strong> nuriasalasvazquez@gmail.com</p>
+        </div>
         <div class="social-icons">
             <a href="https://www.linkedin.com/in/nuriasalasvazquez/" class="social-icon" target="_blank">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/LinkedIn_icon.svg" alt="LinkedIn">
@@ -295,13 +314,16 @@
                 <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub">
             </a>
         </div>
+    </section>
+
+    <footer>
         <p>&copy; 2025 Nuria Salas Vázquez. Todos los derechos reservados.</p>
     </footer>
 
     <button class="scroll-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑</button>
 
     <script>
-        // Scroll to top button visibility
+        // Mostrar el botón de subir
         window.onscroll = function () {
             let scrollButton = document.querySelector('.scroll-to-top');
             if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
@@ -311,12 +333,12 @@
             }
         };
 
-        // Reveal projects on scroll
+        // Mostrar proyectos al hacer scroll
         window.addEventListener('scroll', function () {
             const projects = document.querySelectorAll('.proyecto');
             projects.forEach(function (project) {
                 const position = project.getBoundingClientRect();
-                if (position.top < window.innerHeight && position.bottom >= 0) {
+                if (position.top < window.innerHeight) {
                     project.classList.add('visible');
                 }
             });
@@ -325,3 +347,4 @@
 </body>
 
 </html>
+
