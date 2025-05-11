@@ -24,7 +24,7 @@
             z-index: 1000;
         }
         nav a {
-            color: #ffb347;
+            color: #ff8c00;
             margin: 0 1rem;
             text-decoration: none;
             font-weight: bold;
@@ -47,7 +47,7 @@
         header h1 {
             margin: 0;
             font-size: 2.2rem;
-            color: #ffb347;
+            color: #ff8c00;
         }
         header p {
             font-size: 1.2rem;
@@ -60,8 +60,8 @@
             padding: 2rem;
         }
         .imagen-sobre-mi img {
-            width: 150px;
-            height: 150px;
+            width: 180px;
+            height: 180px;
             object-fit: cover;
             border-radius: 50%;
             box-shadow: 0 4px 12px rgba(0,0,0,0.5);
@@ -86,11 +86,6 @@
         .email-contacto {
             margin-top: 1rem;
             font-size: 1.1rem;
-            display: flex;
-            align-items: center;
-        }
-        .email-contacto a {
-            margin-right: 1rem;
         }
         .proyecto {
             margin-bottom: 3rem;
@@ -122,6 +117,10 @@
             color: #ccc;
             font-size: 0.9rem;
         }
+        .iconos {
+            font-size: 1.5rem;
+            margin-right: 1rem;
+        }
     </style>
 </head>
 
@@ -140,11 +139,8 @@
         <div class="nombre-presentacion">
             <h1>Nuria Salas Vázquez</h1>
             <p>Analista de datos en formación apasionada por descubrir patrones y convertir datos en narrativas significativas. Domino herramientas como Python, SQL, Tableau y Power BI. Me interesa el análisis social y colaborativo donde cada visualización transmite una historia clara y potente.</p>
-            <div class="email-contacto">
-                <a href="mailto:nebeda77@gmail.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Octicons-mail.svg/1024px-Octicons-mail.svg.png" alt="Correo Electrónico" width="24" height="24"></a>
-                <a href="https://www.linkedin.com/in/nuria-salas-vazquez/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/LinkedIn_icon.svg" alt="LinkedIn" width="24" height="24"></a>
-                <a href="https://github.com/NuriaSalasVazquez" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="24" height="24"></a>
-            </div>
+            <p><a href="mailto:nebeda77@gmail.com" class="iconos">📧</a><span>nebeda77@gmail.com</span></p>
+            <p><a href="https://www.linkedin.com/in/nuria-salas-vazquez/" target="_blank" class="iconos">🔗</a><span>LinkedIn</span></p>
         </div>
     </header>
 
@@ -154,6 +150,7 @@
 
             <div class="proyecto">
                 <h3>🏷 Análisis sobre la masculinidad en el siglo XXI</h3>
+                <p><strong>Colaboración:</strong> Andrea Gauger</p>
                 <a class="portada-proyecto" href="https://github.com/NuriaSalasVazquez/da-project-promo-49-modulo-4-team-9" target="_blank">
                     <img src="https://www.uv.es/recursos/fatwirepub/ccurl/713/721/homes_igualtat.jpg" alt="Proyecto Masculinidad">
                 </a>
@@ -163,12 +160,22 @@
 
             <div class="proyecto">
                 <h3>🏷 Proyecto Power BI: Análisis de Asesinos en Serie</h3>
+                <p><strong>Colaboración:</strong> Cibelle Busnello</p>
                 <a class="portada-proyecto" href="https://github.com/NuriaSalasVazquez/Proyecto_Modulo4_PowerBI" target="_blank">
                     <img src="https://m.media-amazon.com/images/S/pv-target-images/695560498751993c53f2b01517eeab61d005a5a4595108be29afdd31d9741831._SX1080_FMjpg_.jpg" alt="Proyecto Serial Killers">
                 </a>
                 <p>Proyecto que utiliza Python para el análisis exploratorio de datos y Power BI para visualizar el perfil de los asesinos en serie. Los datos fueron obtenidos de Wikipedia.</p>
-                <p><a href="https://github.com/CibiPB/project-da-promo-49-modulo-4-team-4/blob/main/Power%20BI/Final%20Project%20-%20prensentacion.pbix" target="_blank" class="boton">Ver archivo de Power BI</a></p>
+                <p><a href="https://github.com/CibiPB/project-da-promo-49-modulo-4-team-4/blob/main/Power%20BI/Final%20Project%20-%20prensentacion.pbix" target="_blank" class="boton">Ver proyecto en Power BI</a></p>
             </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <div class="container">
+            <h2>🏷 Contacto</h2>
+            <p>Puedes contactarme a través de LinkedIn o enviándome un correo electrónico.</p>
+            <a href="https://www.linkedin.com/in/nuria-salas-vazquez/" target="_blank" class="boton">Conectar en LinkedIn</a>
+            <p class="email-contacto">📧 nebeda77@gmail.com</p>
         </div>
     </section>
 
