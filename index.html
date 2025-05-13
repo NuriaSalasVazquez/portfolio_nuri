@@ -1,167 +1,162 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio Nuria Salas Vázquez</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
   <style>
     body {
-      font-family: 'Montserrat', sans-serif;
+      font-family: 'Lato', sans-serif;
       background-color: #121212;
       color: #ffffff;
       margin: 0;
       padding: 0;
-      background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23222222' fill-opacity='0.3'%3E%3Cpath d='M0 40L40 0H30L0 30zM10 40L40 10V0L0 40h10z'/%3E%3C/g%3E%3C/svg%3E");
     }
+
     header {
       text-align: center;
-      padding: 50px 0;
-      background-color: #1e1e1e;
+      padding: 60px 20px 40px;
+      background-color: #121212;
     }
-    header img {
+
+    .profile-photo {
       width: 160px;
       height: 160px;
+      border-radius: 50%;
       object-fit: cover;
-      border-radius: 50% 50% / 50% 50%;
-      border: 4px solid #ffffff;
+      background-color: #ffffff;
+      padding: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
     }
-    header h1 {
+
+    h1 {
       font-size: 2.5em;
-      color: #00bcd4; /* Azul claro */
+      color: #00bcd4;
       margin: 20px 0 10px;
     }
-    header p {
-      font-size: 1.1em;
-      color: #ff1493; /* Fucsia */
-      margin: 5px 0 20px;
+
+    h2 {
+      font-size: 2.2em;
+      color: #00bcd4;
+      margin-bottom: 20px;
     }
-    .profile-description {
+
+    .elevator-pitch {
+      max-width: 700px;
+      margin: 0 auto;
       font-size: 1.1em;
-      color: #ffffff; /* Blanco, más neutral */
-      max-width: 600px;
-      margin: 0 auto 30px;
+      line-height: 1.6;
+      color: #ffffff;
     }
+
+    .cv-button {
+      margin-top: 20px;
+    }
+
+    .btn {
+      background-color: transparent;
+      border: 1.5px solid #00bcd4;
+      color: #00bcd4;
+      padding: 8px 14px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-size: 0.95em;
+      display: inline-block;
+      transition: all 0.3s ease;
+    }
+
+    .btn i {
+      margin-right: 6px;
+    }
+
+    .btn:hover {
+      background-color: #00bcd4;
+      color: #121212;
+      transform: scale(1.05);
+    }
+
     .section {
       padding: 50px 20px;
       text-align: center;
       background-color: #1e1e1e;
     }
-    .section h2 {
-      font-size: 2.2em;
-      color: #00bcd4; /* Azul claro */
-      margin-bottom: 20px;
-    }
+
     .projects {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       gap: 20px;
     }
+
     .project-card {
       background-color: #2c2c2c;
-      width: 400px;
-      padding: 20px;
+      width: 300px;
+      padding: 16px;
       border-radius: 12px;
       box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
-      position: relative;
     }
-    .project-card a img {
+
+    .project-card img {
       width: 100%;
+      border-radius: 10px;
+      margin-bottom: 12px;
       object-fit: cover;
-      border-radius: 12px;
-      margin-bottom: 15px;
+      transition: transform 0.3s ease;
     }
+
+    .project-card:hover img {
+      transform: scale(1.03);
+    }
+
     .project-card h3 {
-      font-size: 1.5em;
+      font-size: 1.3em;
+      color: #00bcd4;
       margin-bottom: 10px;
-      color: #00bcd4; /* Azul claro */
     }
-    .btn {
-      background: linear-gradient(45deg, #00bcd4, #ff1493); /* Azul claro y fucsia */
-      padding: 10px 15px;
-      color: white;
-      border-radius: 8px;
-      text-decoration: none;
-      font-size: 1em;
-      margin: 8px;
-      display: inline-block;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-      border: none;
+
+    .project-card p {
+      font-size: 0.95em;
+      margin-bottom: 8px;
     }
-    .btn i {
-      margin-right: 6px;
-    }
-    .btn:hover {
-      filter: brightness(1.2);
-      transform: scale(1.1);
-    }
+
     .footer {
       background-color: #1e1e1e;
       text-align: center;
       padding: 30px 20px;
     }
+
     .footer h2 {
-      color: #ff8c00; /* Naranja */
+      color: #00bcd4;
     }
+
     .social-icons i {
-      font-size: 2em;
-      margin: 0 15px;
+      font-size: 1.8em;
+      margin: 0 12px;
       color: #ffffff;
       transition: color 0.3s;
     }
+
     .social-icons i:hover {
       color: #00bcd4;
     }
-    .project-card a img {
-  transition: transform 0.3s ease;
-}
-
-.project-card a:hover img {
-  transform: scale(1.05);
-}
-    .project-card {
-  background-color: #2c2c2c;
-  width: 300px; /* Antes era 400px */
-  padding: 16px; /* Antes era 20px */
-  border-radius: 12px;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
-  position: relative;
-}
-
-.project-card h3 {
-  font-size: 1.3em; /* Antes era 1.5em */
-  margin-bottom: 10px;
-  color: #00bcd4;
-}
-
-.project-card p {
-  font-size: 0.95em; /* Ligeramente más pequeño */
-}
-
-.project-card a img {
-  width: 100%;
-  object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 12px; /* Un poco menos de espacio */
-}
-
 
   </style>
 </head>
 <body>
 
   <header>
-    <img src="https://github.com/NuriaSalasVazquez/portfolio_nuri/blob/main/foto%20Nuri%20transp.png?raw=true" alt="Nuria Salas Vázquez">
+    <img src="https://github.com/NuriaSalasVazquez/portfolio_nuri/blob/main/foto%20Nuri%202.jpg?raw=true" alt="Nuria Salas Vázquez" class="profile-photo" />
     <h1>Nuria Salas Vázquez</h1>
-    <p>Analista de Datos</p>
-    <div class="profile-description">
-      Tras una amplia experiencia en el sector servicios, he dado un giro profesional al mundo del análisis de datos. Manejo herramientas como Python, SQL, Power BI y Tableau, con un enfoque visual, narrativo y humano en mis proyectos.
+    <div class="elevator-pitch">
+      Analista de Datos con experiencia previa en el sector servicios. Especializada en la creación de visualizaciones comprensibles y atractivas que conectan los datos con las personas. Trabajo con Python, SQL, Tableau y Power BI, con un enfoque narrativo y humano.
+      <div class="cv-button">
+        <a href="./CV_Nuria_Salas.pdf" class="btn" download><i class="fas fa-file-alt"></i> Descargar CV</a>
+      </div>
     </div>
   </header>
-
- <!-- ...todo igual hasta aquí... -->
 
   <div class="section">
     <h2>Mis Proyectos</h2>
@@ -169,43 +164,40 @@
       <!-- Proyecto Masculinidad -->
       <div class="project-card">
         <a href="https://github.com/NuriaSalasVazquez/da-project-promo-49-modulo-4-team-9" target="_blank">
-          <img src="./masculinity.png" alt="Carátula Masculinidad">
+          <img src="./masculinity.png" alt="Masculinidad" />
         </a>
-        <h3><i class="fas fa-venus-mars"></i> Análisis de la Masculinidad</h3>
-        <p>Una perspectiva crítica y feminista sobre la masculinidad en el siglo XXI.</p>
-        <a href="https://public.tableau.com/app/profile/nuria.salas.vazquez/viz/SerunHombreenelSXXIUnaTragediaen6Actos_/Introduction" target="_blank" class="btn"><i class="fas fa-chart-bar"></i> Ver en Tableau</a>
+        <h3><i class="fas fa-venus-mars"></i> Masculinidad</h3>
+        <p>Una mirada feminista y crítica sobre cómo se construye la masculinidad hoy.</p>
+        <a href="https://public.tableau.com/app/profile/nuria.salas.vazquez/viz/SerunHombreenelSXXIUnaTragediaen6Actos_/Introduction" class="btn" target="_blank">
+          <i class="fas fa-chart-bar"></i> Ver en Tableau
+        </a>
         <p><strong>Colaboradora:</strong> Andrea Gauger</p>
       </div>
 
       <!-- Proyecto Asesinos en Serie -->
       <div class="project-card">
         <a href="https://github.com/NuriaSalasVazquez/Proyecto_Modulo4_PowerBI" target="_blank">
-          <img src="./serial killer.png" alt="Carátula Asesinos en Serie">
+          <img src="./serial killer.png" alt="Asesinos en Serie" />
         </a>
-        <h3><i class="fas fa-user-secret"></i> Análisis de Asesinos en Serie</h3>
-        <p>Explorando patrones y estadísticas de asesinos en serie a través de Power BI.</p>
-      <a href="https://github.com/NuriaSalasVazquez/Proyecto_Modulo4_PowerBI/raw/main/Power%20BI/Final%20Project%20-%20prensentacion.pbix" 
-   download="Proyecto_Asesinos_en_Serie.pbix" class="btn">
-  <i class="fas fa-file-download"></i> Descargar Power BI
-</a>
-
+        <h3><i class="fas fa-user-secret"></i> Asesinos en Serie</h3>
+        <p>Análisis de patrones criminales y datos demográficos con Power BI.</p>
+        <a href="https://github.com/NuriaSalasVazquez/Proyecto_Modulo4_PowerBI/raw/main/Power%20BI/Final%20Project%20-%20prensentacion.pbix" download class="btn">
+          <i class="fas fa-file-download"></i> Descargar Power BI
+        </a>
         <p><strong>Colaboradora:</strong> Cibelle Busnello</p>
       </div>
 
-      <!-- Proyecto Retención y Satisfacción Laboral -->
+      <!-- Proyecto Retención -->
       <div class="project-card">
         <a href="https://github.com/NuriaSalasVazquez/project-da-promo-49-modulo-3-team-4" target="_blank">
-          <img src="./rotación_laboral.png" alt="Carátula Retención y Satisfacción Laboral">
+          <img src="./rotación_laboral.png" alt="Retención Laboral" />
         </a>
-        <h3><i class="fas fa-briefcase"></i> Retención y Satisfacción Laboral</h3>
-        <p>Análisis de datos laborales para mejorar la retención y la satisfacción.</p>
-        <a href="https://github.com/NuriaSalasVazquez/project-da-promo-49-modulo-3-team-4/raw/main/4wardthinkers.pdf" 
-         download="Presentacion_Asesinos_en_Serie.pdf" class="btn">
-   
-         <i class="fas fa-file-pdf"></i> Descargar presentación PDF
+        <h3><i class="fas fa-briefcase"></i> Retención y Satisfacción</h3>
+        <p>Análisis de datos de RRHH para mejorar la retención y bienestar laboral.</p>
+        <a href="https://github.com/NuriaSalasVazquez/project-da-promo-49-modulo-3-team-4/raw/main/4wardthinkers.pdf" download class="btn">
+          <i class="fas fa-file-pdf"></i> Descargar presentación
         </a>
-
-        <p><strong>Colaboradoras:</strong> Marianela Gómez, Amanda Hernández y Cristina Martín</p>
+        <p><strong>Colaboradoras:</strong> Marianela G., Amanda H., Cristina M.</p>
       </div>
     </div>
   </div>
@@ -214,8 +206,11 @@
     <h2>Contacta conmigo</h2>
     <div class="social-icons">
       <a href="https://www.linkedin.com/in/nuria-salas-vazquez/" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="mailto:nebeda77@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+      <a href="mailto:nebeda77@gmail.com"><i class="fas fa-envelope"></i></a>
       <a href="https://github.com/NuriaSalasVazquez" target="_blank"><i class="fab fa-github"></i></a>
     </div>
-    <p>© 2025 Nuria Salas Vázquez. Todos los derechos reservados.</p>
+    <p>© 2025 Nuria Salas Vázquez</p>
   </div>
+
+</body>
+</html>
