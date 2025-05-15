@@ -14,11 +14,51 @@
       color: #ffffff;
       margin: 0;
       padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    /* NAVBAR */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #1e1e1e;
+      padding: 10px 0;
+      z-index: 1000;
+      text-align: center;
+      animation: fadeInDown 1s ease forwards;
+      opacity: 0;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 1em;
+      border-bottom: 2px solid transparent;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00bcd4;
+      border-bottom: 2px solid #00bcd4;
+    }
+
+    @keyframes fadeInDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     header {
       text-align: center;
-      padding: 60px 20px 40px;
+      padding: 140px 20px 40px;
       background-color: #121212;
     }
 
@@ -42,6 +82,13 @@
       font-size: 2.2em;
       color: #00bcd4;
       margin-bottom: 20px;
+    }
+
+    .subtitulo {
+      font-size: 1.6em;
+      color: #00bcd4;
+      margin: 10px 0 20px;
+      font-weight: 500;
     }
 
     .elevator-pitch {
@@ -142,34 +189,32 @@
     .social-icons i:hover {
       color: #00bcd4;
     }
-   
-  .subtitulo {
-    font-size: 1.6em;
-    color: #00bcd4;
-    margin: 10px 0 20px;
-    font-weight: 500;
-  }
-</style>
-</head>
-
-
   </style>
 </head>
 <body>
 
-  <header>
+  <!-- NAVBAR -->
+  <nav>
+    <a href="#about">Sobre mí</a>
+    <a href="#projects">Proyectos</a>
+    <a href="#contact">Contacto</a>
+  </nav>
+
+  <!-- SOBRE MÍ -->
+  <header id="about">
     <img src="https://github.com/NuriaSalasVazquez/portfolio_nuri/blob/main/foto%20Nuri%202.jpg?raw=true" alt="Nuria Salas Vázquez" class="profile-photo" />
     <h1>Nuria Salas Vázquez</h1>
     <h2 class="subtitulo">Data Analyst</h2>
     <div class="elevator-pitch">
-     ¡Hola! Soy Nuria. Después de muchos años trabajando en el sector servicios, decidí dar un salto hacia lo que siempre me había llamado la atención: los datos. Hoy, me apasiona descubrir historias que los números tienen que contar y ayudar a tomar decisiones basadas en hechos. He aprendido herramientas como Python, SQL y Power BI, pero lo que realmente me mueve es la oportunidad de aplicar mi curiosidad y creatividad para encontrar soluciones prácticas. Me encanta trabajar en equipo y enfrentar desafíos que me hagan crecer, mientras sigo aprendiendo cada día. Si hay algo que sé, es que los datos tienen un poder increíble para generar un cambio real, y eso es lo que quiero aportar.
+      ¡Hola! Soy Nuria. Después de muchos años trabajando en el sector servicios, decidí dar un salto hacia lo que siempre me había llamado la atención: los datos. Hoy, me apasiona descubrir historias que los números tienen que contar y ayudar a tomar decisiones basadas en hechos. He aprendido herramientas como Python, SQL y Power BI, pero lo que realmente me mueve es la oportunidad de aplicar mi curiosidad y creatividad para encontrar soluciones prácticas. Me encanta trabajar en equipo y enfrentar desafíos que me hagan crecer, mientras sigo aprendiendo cada día. Si hay algo que sé, es que los datos tienen un poder increíble para generar un cambio real, y eso es lo que quiero aportar.
       <div class="cv-button">
         <a href="https://raw.githubusercontent.com/NuriaSalasVazquez/portfolio_nuri/main/CV%20Nuria%20Salas%20V%C3%A1zquez%20Analista%20de%20datos.pdf" class="btn" download><i class="fas fa-file-alt"></i> Descargar CV</a>
       </div>
     </div>
   </header>
 
-  <div class="section">
+  <!-- PROYECTOS -->
+  <div class="section" id="projects">
     <h2>Mis Proyectos</h2>
     <div class="projects">
       <!-- Proyecto Masculinidad -->
@@ -213,7 +258,8 @@
     </div>
   </div>
 
-  <div class="footer">
+  <!-- CONTACTO -->
+  <div class="footer" id="contact">
     <h2>Contacta conmigo</h2>
     <div class="social-icons">
       <a href="https://www.linkedin.com/in/nuria-salas-vazquez/" target="_blank"><i class="fab fa-linkedin"></i></a>
