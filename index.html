@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -348,7 +349,92 @@
                 </a>
                 <h3><i class="fas fa-venus-mars"></i> Masculinidad</h3>
                 <p>Una mirada feminista y crítica sobre cómo se construye la masculinidad hoy.</p>
-                <button class="btn btn-preview" data-image="https://github.com/NuriaSalasVazquez/portfolio_nuri/blob/main/Captura%20de%20pantalla%20tableau.png"><i class="fas fa-search"></i></button>
+                <button class="btn btn-preview" data-image="fa-check-circle check-icon"></i> Adaptabilidad</li>
+                    <li><i class="fas fa-check-circle check-icon"></i> Gestión de tiempo y priorización</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-header">
+                    <i class="fas fa-code skill-icon"></i>
+                    <h3>Hard Skills</h3>
+                </div>
+                <ul class="skill-list">
+                    <li><i class="fas fa-check-circle check-icon"></i> Python (pandas, numpy)</li>
+                    <li><i class="fas fa-check-circle check-icon"></i> SQL</li>
+                    <li><i class="fas fa-check-circle check-icon"></i> Power BI</li>
+                    <li><i class="fas fa-check-circle check-icon"></i> Tableau</li>
+                    <li><i class="fas fa-check-circle check-icon"></i> Visualización de datos</li>
+                    <li><i class="fas fa-check-circle check-icon"></i> Git</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer" id="contact">
+        <h2>Contacta conmigo</h2>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/nuria-salas-vazquez/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:nebeda77@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/NuriaSalasVazquez" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+        <p>© 2025 Nuria Salas Vázquez</p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Código para la ventana emergente
+            const previewButtons = document.querySelectorAll('.btn-preview');
+            const imagePopup = document.createElement('div');
+            imagePopup.classList.add('image-popup');
+            const popupImage = document.createElement('img');
+            const closeButton = document.createElement('span');
+            closeButton.classList.add('close-button');
+            closeButton.innerHTML = '&times;';
+
+            imagePopup.appendChild(popupImage);
+            imagePopup.appendChild(closeButton);
+            document.body.appendChild(imagePopup);
+
+            previewButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const imageSrc = this.getAttribute('data-image');
+                    popupImage.src = imageSrc;
+                    imagePopup.style.display = 'flex';
+                });
+            });
+
+            closeButton.addEventListener('click', function() {
+                imagePopup.style.display = 'none';
+            });
+
+            imagePopup.addEventListener('click', function(event) {
+                if (event.target === imagePopup) {
+                    imagePopup.style.display = 'none';
+                }
+            });
+
+            // Código para hacer visible la sección de Skills al hacer scroll
+            const skillCards = document.querySelectorAll('.skill-card');
+
+            function checkSkillsVisibility() {
+                skillCards.forEach(card => {
+                    const cardTop = card.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    // Añade la clase 'visible' si la tarjeta está dentro de la ventana (con un pequeño margen)
+                    if (cardTop < windowHeight - 100) {
+                        card.classList.add('visible');
+                    }
+                });
+            }
+
+            // Ejecuta la función al cargar la página y cada vez que se hace scroll
+            window.addEventListener('load', checkSkillsVisibility);
+            window.addEventListener('scroll', checkSkillsVisibility);
+        });
+    </script>
+</body>
+</html>"><i class="fas fa-search"></i></button>
                 <a href="https://public.tableau.com/app/profile/nuria.salas.vazquez/viz/SerunHombreenelSXXIUnaTragediaen6Actos_/Introduction" class="btn" target="_blank">
                     <i class="fas fa-chart-bar"></i> Ver en Tableau
                 </a>
@@ -395,7 +481,7 @@
                     <li><i class="fas fa-check-circle check-icon"></i> Trabajo en equipo</li>
                     <li><i class="fas fa-check-circle check-icon"></i> Curiosidad y aprendizaje continuo</li>
                     <li><i class="fas fa-check-circle check-icon"></i> Resolución de problemas</li>
-                  fa-check-circle check-icon"></i> Adaptabilidad</li>
+                   fa-check-circle check-icon"></i> Adaptabilidad</li>
                     <li><i class="fas fa-check-circle check-icon"></i> Gestión de tiempo y priorización</li>
                 </ul>
             </div>
