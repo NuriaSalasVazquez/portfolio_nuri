@@ -2,483 +2,495 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Nuria Salas Vázquez - Data Analyst Portfolio</title>
-    <link rel="icon" href="./images/favicon.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"/>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
-    <style>
-        body {
-            font-family: 'Lato', sans-serif;
-            background-color: #121212;
-            color: #ffffff;
-            margin: 0;
-            padding: 0;
-            scroll-behavior: smooth;
-        }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Nuria Salas Vázquez - Data Analyst Portfolio</title>
+    <link rel="icon" href="./images/favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
 
-        /* NAVBAR */
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: #1e1e1e;
-            padding: 10px 0;
-            z-index: 1000;
-            text-align: center;
-            animation: fadeInDown 1s ease forwards;
-            opacity: 0;
-        }
+        /* NAVBAR */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #1e1e1e;
+            padding: 10px 0;
+            z-index: 1000;
+            text-align: center;
+            animation: fadeInDown 1s ease forwards;
+            opacity: 0;
+        }
 
-        nav a {
-            color: #ffffff;
-            text-decoration: none;
-            margin: 0 20px;
-            font-size: 1em;
-            border-bottom: 2px solid transparent;
-            transition: all 0.3s ease;
-        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1em;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
 
-        nav a:hover {
-            color: #00bcd4;
-            border-bottom: 2px solid #00bcd4;
-        }
+        nav a:hover {
+            color: #00bcd4;
+            border-bottom: 2px solid #00bcd4;
+        }
 
-        @keyframes fadeInDown {
-            0% {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-        header {
-            text-align: center;
-            padding: 140px 20px 40px;
-            background-color: #121212;
-        }
+        header {
+            text-align: center;
+            padding: 140px 20px 40px;
+            background-color: #121212;
+        }
 
-        .profile-photo {
-            width: 160px;
-            height: 160px;
-            border-radius: 50%;
-            object-fit: cover;
-            background-color: #ffffff;
-            padding: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.4);
-        }
+        .profile-photo {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            background-color: #ffffff;
+            padding: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.4);
+        }
 
-        h1 {
-            font-size: 2.5em;
-            color: #00bcd4;
-            margin: 20px 0 10px;
-        }
+        h1 {
+            font-size: 2.5em;
+            color: #00bcd4;
+            margin: 20px 0 10px;
+        }
 
-        h2 {
-            font-size: 2.2em;
-            color: #00bcd4;
-            margin-bottom: 20px;
-        }
+        h2 {
+            font-size: 2.2em;
+            color: #00bcd4;
+            margin-bottom: 20px;
+        }
 
-        .subtitulo {
-            font-size: 1.6em;
-            color: #00bcd4;
-            margin: 10px 0 20px;
-            font-weight: 500;
-        }
+        .subtitulo {
+            font-size: 1.6em;
+            color: #00bcd4;
+            margin: 10px 0 20px;
+            font-weight: 500;
+        }
 
-        .elevator-pitch {
-            max-width: 700px;
-            margin: 0 auto;
-            font-size: 1.1em;
-            line-height: 1.6;
-            color: #ffffff;
-        }
+        .elevator-pitch {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #ffffff;
+        }
 
-        .cv-button {
-            margin-top: 20px;
-        }
+        .cv-button {
+            margin-top: 20px;
+        }
 
-        .btn {
-            background-color: transparent;
-            border: 1.5px solid #00bcd4;
-            color: #00bcd4;
-            padding: 8px 14px;
-            border-radius: 25px;
-            text-decoration: none;
-            font-size: 0.95em;
-            display: inline-block;
-            transition: all 0.3s ease;
-        }
+        .btn {
+            background-color: transparent;
+            border: 1.5px solid #00bcd4;
+            color: #00bcd4;
+            padding: 8px 14px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 0.95em;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
 
-        .btn i {
-            margin-right: 6px;
-        }
+        .btn i {
+            margin-right: 6px;
+        }
 
-        .btn:hover {
-            background-color: #00bcd4;
-            color: #121212;
-            transform: scale(1.05);
-        }
+        .btn:hover {
+            background-color: #00bcd4;
+            color: #121212;
+            transform: scale(1.05);
+        }
 
-        .section {
-            padding: 50px 20px;
-            text-align: center;
-            background-color: #1e1e1e;
-        }
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #1e1e1e;
+        }
 
-        .projects {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
+        .projects {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
 
-        .project-card {
-            background-color: #2c2c2c;
-            width: 300px;
-            padding: 16px;
-            border-radius: 12px;
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
-            position: relative; /* Necesario para posicionar la ventana emergente dentro si fuera necesario */
-        }
+        .project-card {
+            background-color: #2c2c2c;
+            width: 300px;
+            padding: 16px;
+            border-radius: 12px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+            position: relative; /* Necesario para posicionar la ventana emergente dentro si fuera necesario */
+        }
 
-        .project-card img {
-            width: 100%;
-            border-radius: 10px;
-            margin-bottom: 12px;
-            object-fit: cover;
-            transition: transform 0.3s ease;
-        }
+        .project-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 12px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
 
-        .project-card:hover img {
-            transform: scale(1.03);
-        }
+        .project-card:hover img {
+            transform: scale(1.03);
+        }
 
-        .project-card h3 {
-            font-size: 1.3em;
-            color: #00bcd4;
-            margin-bottom: 10px;
-        }
+        .project-card h3 {
+            font-size: 1.3em;
+            color: #00bcd4;
+            margin-bottom: 10px;
+        }
 
-        .project-card p {
-            font-size: 0.95em;
-            margin-bottom: 8px;
-        }
+        .project-card p {
+            font-size: 0.95em;
+            margin-bottom: 8px;
+        }
 
-        .skills-container {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-            max-width: 900px;
-            margin: 0 auto;
-        }
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            max-width: 900px;
+            margin: 0 auto;
+        }
 
-        .skill-card {
-            background-color: #2c2c2c;
-            border-radius: 12px;
-            padding: 24px 30px;
-            width: 350px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
-            text-align: left;
-            opacity: 0; /* Inicialmente ocultas */
-            transform: translateY(30px); /* Inicialmente un poco abajo */
-            transition: opacity 0.4s ease-out, transform 0.4s ease-out; /* Transición suave */
-        }
+        .skill-card {
+            background-color: #2c2c2c;
+            border-radius: 12px;
+            padding: 24px 30px;
+            width: 350px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+            text-align: left;
+            opacity: 0; /* Inicialmente ocultas */
+            transform: translateY(30px); /* Inicialmente un poco abajo */
+            transition: opacity 0.4s ease-out, transform 0.4s ease-out; /* Transición suave */
+        }
 
-        .skill-card.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
+        .skill-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
 
-        .skill-header {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 18px;
-        }
+        .skill-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 18px;
+        }
 
-        .skill-icon {
-            font-size: 1.8em;
-            color: #00bcd4;
-        }
+        .skill-icon {
+            font-size: 1.8em;
+            color: #00bcd4;
+        }
 
-        .skill-card h3 {
-            color: #00bcd4;
-            font-size: 1.6em;
-            margin: 0;
-        }
+        .skill-card h3 {
+            color: #00bcd4;
+            font-size: 1.6em;
+            margin: 0;
+        }
 
-        .skill-list {
-            list-style: none;
-            padding-left: 0;
-            margin: 0;
-        }
+        .skill-list {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
 
-        .skill-list li {
-            margin-bottom: 12px;
-            font-size: 1.05em;
-            position: relative;
-            padding-left: 28px;
-            color: #ffffff;
-        }
+        .skill-list li {
+            margin-bottom: 12px;
+            font-size: 1.05em;
+            position: relative;
+            padding-left: 28px;
+            color: #ffffff;
+        }
 
-        .check-icon {
-            position: absolute;
-            left: 0;
-            top: 3px;
-            color: #4caf50; /* verde */
-            font-size: 1.2em;
-        }
+        .check-icon {
+            position: absolute;
+            left: 0;
+            top: 3px;
+            color: #4caf50; /* verde */
+            font-size: 1.2em;
+        }
 
-        .footer {
-            background-color: #1e1e1e;
-            text-align: center;
-            padding: 30px 20px;
-        }
+        /* Estilos para la ventana emergente de la imagen */
+        .image-popup {
+            display: none; /* Oculta la ventana por defecto */
+            position: fixed; /* Para que se centre en la pantalla */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semitransparente */
+            z-index: 1001; /* Asegura que esté por encima de todo */
+            justify-content: center; /* Centra el contenido horizontalmente */
+            align-items: center; /* Centra el contenido verticalmente */
+        }
 
-        .footer h2 {
-            color: #00bcd4;
-        }
+        .image-popup img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain; /* Asegura que la imagen se vea completa sin recortar */
+        }
 
-        .social-icons i {
-            font-size: 1.8em;
-            margin: 0 12px;
-            color: #ffffff;
-            transition: color 0.3s;
-        }
+        .image-popup .close-button {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: #ffffff;
+            font-size: 2em;
+            cursor: pointer;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
 
-        .social-icons i:hover {
-            color: #00bcd4;
-        }
+        .image-popup .close-button:hover {
+            opacity: 1;
+        }
 
-        /* Estilos para la ventana emergente de la imagen */
-        .image-popup {
-            display: none; /* Oculta la ventana por defecto */
-            position: fixed; /* Para que se centre en la pantalla */
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semitransparente */
-            z-index: 1001; /* Asegura que esté por encima de todo */
-            justify-content: center; /* Centra el contenido horizontalmente */
-            align-items: center; /* Centra el contenido verticalmente */
-        }
+        .btn-preview {
+            padding: 8px; /* Reduce el padding para que el botón sea más pequeño */
+            border-radius: 50%; /* Para hacerlo circular si lo prefieres */
+            width: 36px; /* Ancho fijo */
+            height: 36px; /* Alto fijo para hacerlo cuadrado o circular */
+            display: flex; /* Para centrar el icono */
+            justify-content: center;
+            align-items: center;
+            font-size: 1em; /* Ajusta el tamaño del icono si es necesario */
+            border: 1px solid #00bcd4; /* Mantiene un borde sutil */
+            background-color: transparent; /* Fondo transparente para que destaque el icono */
+            color: #00bcd4; /* Color del icono */
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
 
-        .image-popup img {
-            max-width: 90%;
-            max-height: 90%;
-            object-fit: contain; /* Asegura que la imagen se vea completa sin recortar */
-        }
+        .btn-preview:hover {
+            background-color: #00bcd4;
+            color: #121212;
+        }
 
-        .image-popup .close-button {
-            position: absolute;
-            top: 20px;
-            right: 30px;
-            color: #ffffff;
-            font-size: 2em;
-            cursor: pointer;
-            opacity: 0.7;
-            transition: opacity 0.3s ease;
-        }
+        .btn-preview i {
+            margin-right: 0 !important; /* Elimina el margen que podría tener el icono por defecto */
+        }
+        .footer {
+            background-color: #1e1e1e;
+            text-align: center;
+            padding: 30px 20px;
+        }
 
-        .image-popup .close-button:hover {
-            opacity: 1;
-        }
+        .footer h2 {
+            color: #00bcd4;
+        }
 
-        .btn-preview {
-            padding: 8px; /* Reduce el padding para que el botón sea más pequeño */
-            border-radius: 50%; /* Para hacerlo circular si lo prefieres */
-            width: 36px; /* Ancho fijo */
-            height: 36px; /* Alto fijo para hacerlo cuadrado o circular */
-            display: flex; /* Para centrar el icono */
-            justify-content: center;
-            align-items: center;
-            font-size: 1em; /* Ajusta el tamaño del icono si es necesario */
-            border: 1px solid #00bcd4; /* Mantiene un borde sutil */
-            background-color: transparent; /* Fondo transparente para que destaque el icono */
-            color: #00bcd4; /* Color del icono */
-            cursor: pointer;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
+        .social-icons i {
+            font-size: 1.8em;
+            margin: 0 12px;
+            color: #ffffff;
+            transition: color 0.3s;
+        }
 
-        .btn-preview:hover {
-            background-color: #00bcd4;
-            color: #121212;
-        }
-
-        .btn-preview i {
-            margin-right: 0 !important; /* Elimina el margen que podría tener el icono por defecto */
-        }
-    </style>
+        .social-icons i:hover {
+            color: #00bcd4;
+        }
+    </style>
 </head>
 <body>
 
-    <nav>
-        <a href="#about">Sobre mí</a>
-        <a href="#projects">Proyectos</a>
-        <a href="#skills">¿Qué puedo aportar?</a>
-        <a href="#contact">Contacto</a>
-    </nav>
+    <nav>
+        <a href="#about">Sobre mí</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#skills">¿Qué puedo aportar?</a>
+        <a href="#contact">Contacto</a>
+    </nav>
 
-    <header id="about">
-        <img src="https://github.com/NuriaSalasVazquez/portfolio_nuri/blob/main/images/foto_Nuri%202.jpg?raw=true" alt="Nuria Salas Vázquez" class="profile-photo" />
-        <h1>Nuria Salas Vázquez</h1>
-        <h2 class="subtitulo">Data Analyst</h2>
-        <div class="elevator-pitch">
-            ¡Hola! Soy Nuria. Después de muchos años trabajando en el sector servicios, decidí dar un salto hacia lo que siempre me había llamado la atención: los datos. Hoy, me apasiona descubrir historias que los números tienen que contar y ayudar a tomar decisiones basadas en hechos. He aprendido herramientas como Python, SQL y Power BI, pero lo que realmente me mueve es la oportunidad de aplicar mi curiosidad y creatividad para encontrar soluciones prácticas. Me encanta trabajar en equipo y enfrentar desafíos que me hagan crecer, mientras sigo aprendiendo cada día. Si hay algo que sé, es que los datos tienen un poder increíble para generar un cambio real, y eso es lo que quiero aportar.
-            <div class="cv-button">
-                <a href="https://raw.githubusercontent.com/NuriaSalasVazquez/portfolio_nuri/main/CV_nuria.pdf" class="btn" download><i class="fas fa-file-alt"></i> Descargar CV</a>
-            </div>
-        </div>
-    </header>
+    <header id="about">
+        <img src="https://github.com/NuriaSalasVazquez/portfolio_nuri/blob/main/images/foto_Nuri%202.jpg?raw=true" alt="Nuria Salas Vázquez" class="profile-photo" />
+        <h1>Nuria Salas Vázquez</h1>
+        <h2 class="subtitulo">Data Analyst</h2>
+        <div class="elevator-pitch">
+            ¡Hola! Soy Nuria. Después de muchos años trabajando en el sector servicios, decidí dar un salto hacia lo que siempre me había llamado la atención: los datos. Hoy, me apasiona descubrir historias que los números tienen que contar y ayudar a tomar decisiones basadas en hechos. He aprendido herramientas como Python, SQL y Power BI, pero lo que realmente me mueve es la oportunidad de aplicar mi curiosidad y creatividad para encontrar soluciones prácticas. Me encanta trabajar en equipo y enfrentar desafíos que me hagan crecer, mientras sigo aprendiendo cada día. Si hay algo que sé, es que los datos tienen un poder increíble para generar un cambio real, y eso es lo que quiero aportar.
+            <div class="cv-button">
+                <a href="https://raw.githubusercontent.com/NuriaSalasVazquez/portfolio_nuri/main/CV_nuria.pdf" class="btn" download><i class="fas fa-file-alt"></i> Descargar CV</a>
+            </div>
+        </div>
+    </header>
 
-    <div class="section" id="projects">
-        <h2>Mis Proyectos</h2>
-        <div class="projects">
+    <div class="section" id="projects">
+        <h2>Mis Proyectos</h2>
+        <div class="projects">
+            <div class="project-card">
+                <a href="https://github.com/NuriaSalasVazquez/da-project-promo-49-modulo-4-team-9" target="_blank">
+                    <img src="images/masculinity.png" alt="Masculinidad" />
+                </a>
+                <h3><i class="fas fa-venus-mars"></i> Masculinidad</h3>
+                <p>Una mirada feminista y crítica sobre cómo se construye la masculinidad hoy.</p>
+                <button class="btn btn-preview" data-image="images/Captura_tableau.png"><i class="fas fa-search"></i></button>
+                <a href="https://public.tableau.com/app/profile/nuria.salas.vazquez/viz/SerunHombreenelSXXIUnaTragediaen6Actos_/Introduction" class="btn" target="_blank">
+                    <i class="fas fa-chart-bar"></i> Ver en Tableau
+                </a>
+                <p><strong>Colaboradora:</strong> Andrea Gauger</p>
+            </div>
+
+            <div class="project-card">
+                <a href="https://github.com/NuriaSalasVazquez/Proyecto_Modulo4_PowerBI" target="_blank">
+                    <img src="images/serial_killer.png" alt="Asesinos en Serie" />
+                </a>
+                <h3><i class="fas fa-user-secret"></i> Asesinos en Serie</h3>
+                <p>Análisis de patrones criminales y datos demográficos con Power BI.</p>
+                <button class="btn btn-preview" data-image="images/Captura_PowerBI2.png"><i class="fas fa-search"></i></button>
+                <a href="https://github.com/NuriaSalasVazquez/Proyecto_Modulo4_PowerBI/raw/main/Power%20BI/Final%20Project%20-%20prensentacion.pbix" download class="btn">
+                    <i class="fas fa-file-download"></i> Descargar Power BI
+                </a>
+                <p><strong>Colaboradora:</strong> Cibelle Busnello</p>
+            </div>
+
+            <div class="project-card">
+                <a href="https://github.com/NuriaSalasVazquez/project-da-promo-49-modulo-3-team-4" target="_blank">
+                    <img src="images/rotacion_satisfaccion.png" alt="Retención Laboral" />
+                </a>
+                <h3><i class="fas fa-briefcase"></i> Retención y Satisfacción</h3>
+                <p>Análisis de datos de RRHH para mejorar la retención y bienestar laboral.</p>
+                <button class="btn btn-preview" data-image="images/Captura_retencion2.png"><i class="fas fa-search"></i></button>
+                <a href="https://github.com/NuriaSalasVazquez/project-da-promo-49-modulo-3-team-4/raw/main/4wardthinkers.pdf" download class="btn">
+                    <i class="fas fa-file-pdf"></i> Descargar presentación
+                </a>
+                <p><strong>Colaboradoras:</strong> Marianela G., Amanda H., Cristina M.</p>
+            </div>
+
             <div class="project-card">
-                <a href="https://github.com/NuriaSalasVazquez/da-project-promo-49-modulo-4-team-9" target="_blank">
-                    <img src="images/masculinity.png" alt="Masculinidad" />
+                <a href="https://github.com/NuriaSalasVazquez/evolucion-musica-pandemia" target="_blank">
+                    <img src="http://googleusercontent.com/image_generation_content/3" alt="Evolución de la música en la pandemia" />
                 </a>
-                <h3><i class="fas fa-venus-mars"></i> Masculinidad</h3>
-                <p>Una mirada feminista y crítica sobre cómo se construye la masculinidad hoy.</p>
-                <button class="btn btn-preview" data-image="images/Captura_tableau.png"><i class="fas fa-search"></i></button>
-                <a href="https://public.tableau.com/app/profile/nuria.salas.vazquez/viz/SerunHombreenelSXXIUnaTragediaen6Actos_/Introduction" class="btn" target="_blank">
-                    <i class="fas fa-chart-bar"></i> Ver en Tableau
+                <h3><i class="fas fa-music"></i> Evolución de la Música en la Pandemia</h3>
+                <p>Análisis de datos de Spotify y Last.fm con Python y SQL para explorar cómo la música nos acompañó en el encierro.</p>
+                <button class="btn btn-preview" data-image="http://googleusercontent.com/image_generation_content/3"><i class="fas fa-search"></i></button>
+                <a href="https://github.com/NuriaSalasVazquez/evolucion-musica-pandemia/raw/main/proyecto_final.ipynb" download class="btn">
+                    <i class="fas fa-file-download"></i> Descargar Notebook
                 </a>
-                <p><strong>Colaboradora:</strong> Andrea Gauger</p>
+                <p><strong>Colaboradores:</strong> [Si hubo colaboradores, pon sus nombres aquí]</p>
             </div>
+                    </div>
+    </div>
+    <div class="section" id="skills">
+        <h2>¿Qué puedo aportar a tu proyecto?</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <div class="skill-header">
+                    <i class="fas fa-users skill-icon"></i>
+                    <h3>Soft Skills</h3>
+                </div>
+                <ul class="skill-list">
+                    <li><i class="fas fa-check-circle check-icon"></i> Comunicación efectiva</li>
+                    <li><i class="fas fa-check-circle check-icon"></i> Trabajo en equipo</li>
+                    <li><i class="fas fa-check-circle check-icon"></i> Curiosidad y aprendizaje continuo</li>
+                    <li><i class="fas fa-check-circle check-icon"></i> Resolución de problemas</li>
+                    <li><i class="fas fa-check-circle check-icon"></i> Adaptabilidad</li>
+                    <li><i class="fas fa-check-circle check-icon"></i> Gestión de tiempo y priorización</li>
+                </ul>
+            </div>
 
-            <div class="project-card">
-                <a href="https://github.com/NuriaSalasVazquez/Proyecto_Modulo4_PowerBI" target="_blank">
-                    <img src="images/serial_killer.png" alt="Asesinos en Serie" />
-                </a>
-                <h3><i class="fas fa-user-secret"></i> Asesinos en Serie</h3>
-                <p>Análisis de patrones criminales y datos demográficos con Power BI.</p>
-                <button class="btn btn-preview" data-image="images/Captura_PowerBI2.png"><i class="fas fa-search"></i></button>
-                <a href="https://github.com/NuriaSalasVazquez/Proyecto_Modulo4_PowerBI/raw/main/Power%20BI/Final%20Project%20-%20prensentacion.pbix" download class="btn">
-                    <i class="fas fa-file-download"></i> Descargar Power BI
-                </a>
-                <p><strong>Colaboradora:</strong> Cibelle Busnello</p>
-            </div>
+            <div class="skill-card">
+                <div class="skill-header">
+                    <i class="fas fa-code skill-icon"></i>
+                    <h3>Hard Skills</h3>
+                </div>
+                <ul class="skill-list">
+                    <li><i class="fas fa-check-circle check-icon"></i> Python (pandas, numpy)</li>
+                    <li><i class="fas fa-check-circle check-icon"></i> SQL</li>
+                    <li><i class="fas fa-check-circle check-icon"></i> Power BI</li>
+                    <li><i class="fas fa-check-circle check-icon"></i> Tableau</li>
+                    <li><i class="fas fa-check-circle check-icon"></i> Visualización de datos</li>
+                    <li><i class="fas fa-check-circle check-icon"></i> Git</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-            <div class="project-card">
-                <a href="https://github.com/NuriaSalasVazquez/project-da-promo-49-modulo-3-team-4" target="_blank">
-                    <img src="images/rotacion_satisfaccion.png" alt="Retención Laboral" />
-                </a>
-                <h3><i class="fas fa-briefcase"></i> Retención y Satisfacción</h3>
-                <p>Análisis de datos de RRHH para mejorar la retención y bienestar laboral.</p>
-                <button class="btn btn-preview" data-image="images/Captura_retencion2.png"><i class="fas fa-search"></i></button>
-                <a href="https://github.com/NuriaSalasVazquez/project-da-promo-49-modulo-3-team-4/raw/main/4wardthinkers.pdf" download class="btn">
-                    <i class="fas fa-file-pdf"></i> Descargar presentación
-                </a>
-                <p><strong>Colaboradoras:</strong> Marianela G., Amanda H., Cristina M.</p>
-            </div>
-        </div>
-    </div>
-    <div class="section" id="skills">
-        <h2>¿Qué puedo aportar a tu proyecto?</h2>
-        <div class="skills-container">
-            <div class="skill-card">
-                <div class="skill-header">
-                    <i class="fas fa-users skill-icon"></i>
-                    <h3>Soft Skills</h3>
-                </div>
-                <ul class="skill-list">
-                    <li><i class="fas fa-check-circle check-icon"></i> Comunicación efectiva</li>
-                    <li><i class="fas fa-check-circle check-icon"></i> Trabajo en equipo</li>
-                    <li><i class="fas fa-check-circle check-icon"></i> Curiosidad y aprendizaje continuo</li>
-                    <li><i class="fas fa-check-circle check-icon"></i> Resolución de problemas</li>
-                    <li><i class="fas fa-check-circle check-icon"></i> Adaptabilidad</li>
-                    <li><i class="fas fa-check-circle check-icon"></i> Gestión de tiempo y priorización</li>
-                </ul>
-            </div>
+    <div class="footer" id="contact">
+        <h2>Contacta conmigo</h2>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/nuria-salas-vazquez/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:nebeda77@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/NuriaSalasVazquez" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+        <p>© 2025 Nuria Salas Vázquez</p>
+    </div>
 
-            <div class="skill-card">
-                <div class="skill-header">
-                    <i class="fas fa-code skill-icon"></i>
-                    <h3>Hard Skills</h3>
-                </div>
-                <ul class="skill-list">
-                    <li><i class="fas fa-check-circle check-icon"></i> Python (pandas, numpy)</li>
-                    <li><i class="fas fa-check-circle check-icon"></i> SQL</li>
-                    <li><i class="fas fa-check-circle check-icon"></i> Power BI</li>
-                    <li><i class="fas fa-check-circle check-icon"></i> Tableau</li>
-                    <li><i class="fas fa-check-circle check-icon"></i> Visualización de datos</li>
-                    <li><i class="fas fa-check-circle check-icon"></i> Git</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Código para la ventana emergente
+            const previewButtons = document.querySelectorAll('.btn-preview');
+            const imagePopup = document.createElement('div');
+            imagePopup.classList.add('image-popup');
+            const popupImage = document.createElement('img');
+            const closeButton = document.createElement('span');
+            closeButton.classList.add('close-button');
+            closeButton.innerHTML = '&times;';
 
-    <div class="footer" id="contact">
-        <h2>Contacta conmigo</h2>
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/nuria-salas-vazquez/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:nebeda77@gmail.com"><i class="fas fa-envelope"></i></a>
-            <a href="https://github.com/NuriaSalasVazquez" target="_blank"><i class="fab fa-github"></i></a>
-        </div>
-        <p>© 2025 Nuria Salas Vázquez</p>
-    </div>
+            imagePopup.appendChild(popupImage);
+            imagePopup.appendChild(closeButton);
+            document.body.appendChild(imagePopup);
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Código para la ventana emergente
-            const previewButtons = document.querySelectorAll('.btn-preview');
-            const imagePopup = document.createElement('div');
-            imagePopup.classList.add('image-popup');
-            const popupImage = document.createElement('img');
-            const closeButton = document.createElement('span');
-            closeButton.classList.add('close-button');
-            closeButton.innerHTML = '&times;';
+            previewButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const imageSrc = this.getAttribute('data-image');
+                    popupImage.src = imageSrc;
+                    imagePopup.style.display = 'flex';
+                });
+            });
 
-            imagePopup.appendChild(popupImage);
-            imagePopup.appendChild(closeButton);
-            document.body.appendChild(imagePopup);
+            closeButton.addEventListener('click', function() {
+                imagePopup.style.display = 'none';
+            });
 
-            previewButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    const imageSrc = this.getAttribute('data-image');
-                    popupImage.src = imageSrc;
-                    imagePopup.style.display = 'flex';
-                });
-            });
+            imagePopup.addEventListener('click', function(event) {
+                if (event.target === imagePopup) {
+                    imagePopup.style.display = 'none';
+                }
+            });
 
-            closeButton.addEventListener('click', function() {
-                imagePopup.style.display = 'none';
-            });
+            // Código para hacer visible la sección de Skills al hacer scroll
+            const skillCards = document.querySelectorAll('.skill-card');
 
-            imagePopup.addEventListener('click', function(event) {
-                if (event.target === imagePopup) {
-                    imagePopup.style.display = 'none';
-                }
-            });
+            function checkSkillsVisibility() {
+                skillCards.forEach(card => {
+                    const cardTop = card.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    // Añade la clase 'visible' si la tarjeta está dentro de la ventana (con un pequeño margen)
+                    if (cardTop < windowHeight - 100) {
+                        card.classList.add('visible');
+                    }
+                });
+            }
 
-            // Código para hacer visible la sección de Skills al hacer scroll
-            const skillCards = document.querySelectorAll('.skill-card');
-
-            function checkSkillsVisibility() {
-                skillCards.forEach(card => {
-                    const cardTop = card.getBoundingClientRect().top;
-                    const windowHeight = window.innerHeight;
-                    // Añade la clase 'visible' si la tarjeta está dentro de la ventana (con un pequeño margen)
-                    if (cardTop < windowHeight - 100) {
-                        card.classList.add('visible');
-                    }
-                });
-            }
-
-            // Ejecuta la función al cargar la página y cada vez que se hace scroll
-            window.addEventListener('load', checkSkillsVisibility);
-            window.addEventListener('scroll', checkSkillsVisibility);
-        });
-    </script>
+            // Ejecuta la función al cargar la página y cada vez que se hace scroll
+            window.addEventListener('load', checkSkillsVisibility);
+            window.addEventListener('scroll', checkSkillsVisibility);
+        });
+    </script>
 </body>
 </html>
